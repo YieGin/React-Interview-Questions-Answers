@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+.Main {
+  height: 100%;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.928);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-family: 'Roboto', sans-serif;
+  row-gap: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  overflow: hidden;
+}
+.content {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  background: linear-gradient(
+    to right, 
+    rgb(255, 255, 255) 0,
+    hsl(0, 0%, 0%) 50%,
+    rgb(255, 255, 255) 20%
+    ); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 35s infinite linear;
+}
+
+ @keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 5000px;
+  }
+  100% {
+    background-position: 50px;
+  }
+ }
+
+ .Box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 90%;
+ }
+ h1 {
+  color: rgba(255, 174, 0, 0.689);
+  width: 90%;
+ }
+ p {
+  line-height: 40px;
+  text-align: justify;
+  font-size: 17px;
+  color: rgb(196, 195, 195);
+ }
+ b {
+  color: rgb(241, 93, 93);
+ }
+ @media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 20px;
+  }
+  
+ }
