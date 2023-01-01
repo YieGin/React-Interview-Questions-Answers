@@ -12,6 +12,9 @@ import Image9 from "./Images/9.png";
 import Image10 from "./Images/10.png";
 import Image11 from "./Images/11.png";
 import Image12 from "./Images/12.png";
+import Image13 from "./Images/13.png";
+import Image14 from "./Images/14.png";
+
 const App = () => {
   return (
     <div className="Main">
@@ -356,6 +359,13 @@ const App = () => {
           allows a user to enter their name. In a traditional HTML form, the
           value of the text input field would be determined by the user's input.
         </p>
+        <img src={Image14} alt="" />
+        <p>
+          In this example, the <b>input</b> element is now a controlled
+          component because the value of the <b>input</b> is set by the parent
+          component's state, and the parent component is able to update the
+          value of the <b>input</b> by handling the <b>onChange</b> event.
+        </p>
       </div>
       <div className="Box">
         <h1>What are uncontrolled components?</h1>
@@ -369,6 +379,13 @@ const App = () => {
           enter their name. In an uncontrolled component, the value of the text
           input field would be determined by the user's input, rather than being
           controlled by the component's state.
+        </p>
+        <img src={Image13} alt="" />
+        <p>
+          In this example, the <b>input</b> element is an uncontrolled component
+          because it manages its own state (the value of the text input by the
+          user). The parent component, <b>ExampleForm</b>, has no way to
+          directly control or update the value of the <b>input</b>.
         </p>
       </div>
       <div className="Box">
