@@ -1,9 +1,13 @@
 {
   "files": {
     "main.css": "/React-Interview-Questions-Answers/static/css/main.ceaade0d.css",
-    "main.js": "/React-Interview-Questions-Answers/static/js/main.447a4f4a.js",
+    "main.js": "/React-Interview-Questions-Answers/static/js/main.92dd674b.js",
+    "static/media/26.png": "/React-Interview-Questions-Answers/static/media/26.0cbb97813a880e891255.png",
     "static/media/image.png": "/React-Interview-Questions-Answers/static/media/image.9bbc23e404245f17a14c.png",
+    "static/media/25.png": "/React-Interview-Questions-Answers/static/media/25.4d6d12675d90ed552214.png",
+    "static/media/29.png": "/React-Interview-Questions-Answers/static/media/29.a64c2462ab64bc8ab733.png",
     "static/media/9.png": "/React-Interview-Questions-Answers/static/media/9.ff85f4ab053fb8d518e6.png",
+    "static/media/28.png": "/React-Interview-Questions-Answers/static/media/28.c7b2d040096a1d1e10d6.png",
     "static/media/2.png": "/React-Interview-Questions-Answers/static/media/2.3a343fe825f90d23f20e.png",
     "static/media/24.png": "/React-Interview-Questions-Answers/static/media/24.a8446c81a9733437a2ff.png",
     "static/media/14.png": "/React-Interview-Questions-Answers/static/media/14.4b347ffc3822582b77be.png",
@@ -16,12 +20,13 @@
     "static/media/20.png": "/React-Interview-Questions-Answers/static/media/20.abc4faa304c7f621846f.png",
     "static/media/21.png": "/React-Interview-Questions-Answers/static/media/21.64da32511c8540fb5d50.png",
     "static/media/13.png": "/React-Interview-Questions-Answers/static/media/13.e21c9f1022baedb08822.png",
+    "static/media/27.png": "/React-Interview-Questions-Answers/static/media/27.a137d9243055d4af2ce4.png",
     "index.html": "/React-Interview-Questions-Answers/index.html",
     "main.ceaade0d.css.map": "/React-Interview-Questions-Answers/static/css/main.ceaade0d.css.map",
-    "main.447a4f4a.js.map": "/React-Interview-Questions-Answers/static/js/main.447a4f4a.js.map"
+    "main.92dd674b.js.map": "/React-Interview-Questions-Answers/static/js/main.92dd674b.js.map"
   },
   "entrypoints": [
     "static/css/main.ceaade0d.css",
-    "static/js/main.447a4f4a.js"
+    "static/js/main.92dd674b.js"
   ]
 }
