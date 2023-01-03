@@ -22,6 +22,11 @@ import Image21 from "./Images/21.png";
 import Image22 from "./Images/22.png";
 import Image23 from "./Images/23.png";
 import Image24 from "./Images/24.png";
+import Image25 from "./Images/25.png";
+import Image26 from "./Images/26.png";
+import Image27 from "./Images/27.png";
+import Image28 from "./Images/28.png";
+import Image29 from "./Images/29.png";
 
 const App = () => {
   return (
@@ -885,12 +890,19 @@ const App = () => {
       <div className="Box">
         <h1>What will happen if you use props in initial state?</h1>
         <p>
-          If you use <b>props in the initial state</b> of a React component, the
-          component will use the props to initialize its state. This is a way to
-          set the initial state of a component based on the props that are
-          passed to it. But If you need to update the state of a component based
-          on its props, you should use the <b>useEffect hook</b>.
+          If you try to use props in the initial state of a component, it will
+          cause an error because the props of a component are not available when
+          the initial state is being set. The props are only passed to the
+          component after it has been mounted, so they are not available during
+          the initial render.
         </p>
+        <img src={Image25} alt="" />
+        <p>
+          To fix this error, you can either set the initial state to a default
+          value or pass the prop value as an argument to the setState method
+          when the component mounts.
+        </p>
+        <img src={Image26} alt="" />
       </div>
       <div className="Box">
         <h1>How do you conditionally render components?</h1>
@@ -917,19 +929,30 @@ const App = () => {
       <div className="Box">
         <h1>Why we need to be careful when spreading props on DOM elements?</h1>
         <p>
-          #1 one potential issue is that you may accidentally overwrite
-          important attributes of the DOM element. For example, if you spread an
-          object that has a class property onto a DOM element, it will overwrite
-          the element's className attribute, which could cause unexpected
-          behavior in your application.
+          #1 Some props are reserved for React's internal usage and cannot be
+          passed to DOM elements. For example, the key prop is used by React to
+          identify elements in the virtual DOM, and the ref prop is used to
+          access the properties of DOM elements.
+        </p>
+
+        <p>
+          #2 Some props are not valid HTML attributes and will cause an error if
+          you try to spread them on a DOM element. For example, the className
+          prop should be used instead of the class prop because class is a
+          reserved word in JavaScript.
         </p>
         <p>
-          #2 Another issue is that you may spread unnecessary or potentially
-          harmful props onto the element. For example, if you spread an object
-          that includes sensitive data such as passwords or personal
-          information, that data could be exposed in the HTML of your
-          application, which could be a security risk.
+          #3 Spreading props on DOM elements can lead to unexpected behavior if
+          you are not careful. For example, if you spread the entire props
+          object on a DOM element, it will override any props that are specific
+          to that DOM element (such as the value prop on an input element).
         </p>
+        <p>
+          To avoid these problems, it is generally a good idea to only spread
+          the props that are relevant to the DOM element you are rendering. You
+          can use the ... spread operator to do this:
+        </p>
+        <img src={Image27} alt="" />
       </div>
       <div className="Box">
         <h1>How you use decorators in React?</h1>
@@ -948,16 +971,25 @@ const App = () => {
       <div className="Box">
         <h1>How do you memoize a component?</h1>
         <p>
-          To memoize a component, you can use the React.memo higher-order
-          component. This component will only re-render the wrapped component if
-          one of props has changed.
+          In React, you can memoize a component by using the <b>React.memo</b>{" "}
+          higher-order component (HOC). <b>React.memo</b> is a HOC that is
+          similar to <b>React.PureComponent</b> in that it will only re-render a
+          component if its props have changed. However, React.memo is for
+          functional components, whereas <b>React.PureComponent</b> is for
+          class-based components
         </p>
+        <p>
+          Now, MyComponent will only re-render if its props have changed. This
+          can be a useful optimization if you have a large component tree and
+          you want to avoid unnecessary re-renders.
+        </p>
+        <img src={Image28} alt="" />
         <p>
           React.memo only works for functional components and not class-based
           components. If you need to memoize a class-based component, you can
-          use the shouldComponentUpdate lifecycle method and implement your own
-          comparison logic.
+          use the <b>React.PureComponent</b>.
         </p>
+        <img src={Image29} alt="" />
       </div>
       <div className="Box">
         <h1>How you implement Server Side Rendering or SSR?</h1>
