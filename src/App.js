@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./App.css";
 import Image1 from "./Images/image.png";
 import Image2 from "./Images/2.png";
@@ -14,6 +15,13 @@ import Image11 from "./Images/11.png";
 import Image12 from "./Images/12.png";
 import Image13 from "./Images/13.png";
 import Image14 from "./Images/14.png";
+import Image16 from "./Images/18.png";
+import Image19 from "./Images/19.png";
+import Image20 from "./Images/20.png";
+import Image21 from "./Images/21.png";
+import Image22 from "./Images/22.png";
+import Image23 from "./Images/23.png";
+import Image24 from "./Images/24.png";
 
 const App = () => {
   return (
@@ -568,6 +576,7 @@ const App = () => {
           is a way of exporting a specific value or function from a module, and
           giving it a specific name.
         </p>
+        <img src={Image16} alt="" />
       </div>
       <div className="Box">
         <h1>Why React uses className over class attribute?</h1>
@@ -763,27 +772,42 @@ const App = () => {
       <div className="Box">
         <h1>What is the purpose of render method of react-dom?</h1>
         <p>
-          The purpose of using render method of the react-dom is to render a
-          React element into the DOM in the specified container. It takes two
-          arguments: the <b>React element</b> that you want to render, and the{" "}
-          <b> DOM element</b> where you want to render it.
+          In the React library, the <b>render()</b> method is used to render a
+          React element to the DOM. It takes two arguments:
+        </p>
+        <p>
+          #1 The React element that you want to render. This can be a JSX
+          element, a string, a number, or an array of elements.
+        </p>
+        <p>
+          #2 The DOM element that you want to render the element to. This can be
+          an element that already exists in the DOM, or it can be a new element
+          that you want to create.
+        </p>
+        <img src={Image19} alt="" />
+        <p>
+          This code will render the element to the DOM <b>element</b> with an ID
+          of <b>root</b>. The result will be that the text
+          <b>"Hello, World!"</b> is displayed on the page.
         </p>
       </div>
       <div className="Box">
         <h1>What is ReactDOMServer?</h1>
         <p>
-          <b>ReactDOMServer</b> is a part of the react-dom package in the React
-          library. It provides methods for rendering React components to static
-          HTML markup. This can be useful for <b>server-side</b> rendering, for
-          example, to generate HTML that can be sent to the client to improve
-          the performance.
-        </p>
-        <p>
-          The most commonly used method in ReactDOMServer is{" "}
-          <b>renderToString</b>, which takes a React element as an argument and
-          returns a string of HTML markup representing the element.
+          <b>ReactDOMServer</b> is a package in the React library that provides
+          methods for rendering React components to static HTML. It is primarily
+          used for server-side rendering (SSR) of React apps, but it can also be
+          used for other purposes such as generating static HTML pages from a
+          React app.
+          <p>
+            The most commonly used method in <b>ReactDOMServer</b> is
+            renderToString(), which takes a React element and returns a string
+            of HTML that represents the element. For example:
+          </p>
+          <img src={Image20} alt="" />
         </p>
       </div>
+
       <div className="Box">
         <h1>How to use innerHTML in React?</h1>
         <p>
@@ -799,7 +823,7 @@ const App = () => {
         <p>
           In this example, the <b>html</b> prop of <b>MyComponent</b> is
           expected to contain a string of HTML, which will be set as the inner
-          HTML of the <b>div</b>
+          HTML of the <b>div </b>
           element.
         </p>
       </div>
@@ -875,17 +899,20 @@ const App = () => {
           #1 Using an if statement: You can use an <b>if</b> statement inside
           the render method to conditionally render a component.
         </p>
+        <img src={Image21} alt="" />
         <p>
           #2 Using a ternary operator: You can use a ternary operator
           <b> (? :)</b>
           inside the render method to conditionally render a component.
         </p>
+        <img src={Image22} alt="" />
         <p>
           #3 Using a short-circuit operator: You can use a short-circuit
           operator <b>(&&)</b> to conditionally render a component. If the
           condition before the <b>&&</b> operator is true, the component after{" "}
           <b>&&</b> will be rendered.{" "}
         </p>
+        <img src={Image23} alt="" />
       </div>
       <div className="Box">
         <h1>Why we need to be careful when spreading props on DOM elements?</h1>
@@ -907,11 +934,16 @@ const App = () => {
       <div className="Box">
         <h1>How you use decorators in React?</h1>
         <p>
-          a decorator is a function that takes a component and returns a new,
-          modified component. Decorators are often used to add additional
-          functionality to a component, such as binding action creators to a
-          dispatch function or adding additional props to a component.
+          A decorator is a design pattern that allows you to add new behavior to
+          an existing object in a flexible and composable way. In JavaScript,
+          you can use the @ symbol to define a decorator.
         </p>
+        <p>
+          In React, decorators can be used to modify the behavior of a component
+          or a higher-order component (HOC). Here is an example of how you might
+          use a decorator to log the props of a component whenever it renders:
+        </p>
+        <img src={Image24} alt="" />
       </div>
       <div className="Box">
         <h1>How do you memoize a component?</h1>
