@@ -27,7 +27,26 @@ import Image26 from "./Images/26.png";
 import Image27 from "./Images/27.png";
 import Image28 from "./Images/28.png";
 import Image29 from "./Images/29.png";
-
+import Image30 from "./Images/30.png";
+import Image31 from "./Images/31.png";
+import Image32 from "./Images/32.png";
+import Image33 from "./Images/33.png";
+import Image34 from "./Images/34.png";
+import Image35 from "./Images/35.png";
+import Image36 from "./Images/36.png";
+import Image37 from "./Images/37.png";
+import Image38 from "./Images/38.png";
+import Image39 from "./Images/39.png";
+import Image40 from "./Images/40.png";
+import Image41 from "./Images/41.png";
+import Image42 from "./Images/42.png";
+import Image43 from "./Images/43.png";
+import Image44 from "./Images/44.png";
+import Image45 from "./Images/45.png";
+import Image46 from "./Images/46.png";
+import Image47 from "./Images/47.png";
+import Image48 from "./Images/48.png";
+import Image49 from "./Images/49.png";
 const App = () => {
   return (
     <div className="Main">
@@ -1220,99 +1239,218 @@ const App = () => {
       <div className="Box">
         <h1>Do Hooks replace render props and higher order components?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          Hooks are a new feature in React that was introduced in the{" "}
+          <b>16.8 version </b>
+          of the library. They allow you to use state and other React features
+          in functional components, rather than just class-based components.
+        </p>
+        <p>
+          Hooks can be used to replace both render props and higher order
+          components (HOCs).{" "}
+        </p>
+        <p>
+          Both render props and HOCs are often used to share behavior between
+          components, and Hooks provide an alternative way to do this. They can
+          make it easier to reuse stateful logic and can make it easier to
+          understand the code because the logic is all in one place, rather than
+          being spread out between multiple components and HOCs. However, HOCs
+          and render props are still useful patterns to know about and can be
+          used in conjunction with Hooks.
         </p>
       </div>
       <div className="Box">
         <h1>What is the recommended way for naming components?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          It is generally recommended to use a capital letter for the{" "}
+          <b>first letter </b>
+          of the component name when naming a React component. This helps to
+          distinguish the component from regular HTML elements, which are always
+          lowercase.
+        </p>
+        <p>
+          For example, you might name a component <b>MyComponent</b>, rather
+          than <b>myComponent</b>. This convention is not strictly required, but
+          it is a common practice that many developers follow.
         </p>
       </div>
       <div className="Box">
         <h1>What is the recommended ordering of methods in component class?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          There is no strict ordering of methods in a component class in a
+          JavaScript or TypeScript application, but there are some common
+          conventions that can be followed to help make the code more readable
+          and maintainable.
+        </p>
+        <p>
+          #1 <b>Constructor </b>: The constructor is typically the first method
+          in a component class. It is used to initialize the component's state
+          and to bind any event handlers to the component.{" "}
+        </p>
+        <p>
+          #2 Lifecycle methods: Lifecycle methods, such as{" "}
+          <b>componentDidMount</b>, <b>componentDidUpdate</b>, and{" "}
+          <b>componentWillUnmount</b>, should come after the constructor.{" "}
+        </p>
+        <p>
+          #3 <b>Event handlers</b>: Any event handlers that are bound in the
+          constructor should come after the lifecycle methods. This makes it
+          easier to see which events are being handled by the component.{" "}
+        </p>
+        <p>
+          #4 Render method: The <b>render</b> method should typically come last,
+          as it is the method that returns the JSX that is rendered to the DOM.
         </p>
       </div>
       <div className="Box">
         <h1>What is a switching component?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          {" "}
+          <b>Switch</b> is a component that is used to group a set of{" "}
+          <b>Route</b> components. It renders the first <b>Route</b> that
+          matches the current location. If no routes match the current location,
+          the <b>Switch</b> component can render a default <b>route</b> using
+          the Route component with no <b>path</b> prop specified.
         </p>
       </div>
       <div className="Box">
         <h1>Why we need to pass a function to setState()?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          there's only 1 reason why you might want to pass a function to
+          setState instead of an object is to ensure that the state update is
+          atomic. When you pass an object to setState, React will merge the
+          object with the current state. If you have multiple calls to setState
+          that depend on the current state, it is possible for the state updates
+          to be applied out of order, which can lead to unexpected behavior.
         </p>
       </div>
       <div className="Box">
         <h1>What is strict mode in React?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          Strict mode is a feature in React that activates additional checks and
+          warnings for your application. It is intended to help you find
+          problems in your code that may be difficult to detect without these
+          checks.
         </p>
-      </div>
-      <div className="Box">
-        <h1>What is strict mode in React?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          To use strict mode in a React component, you can wrap the component in
+          a <b>React.StrictMode</b> element:
         </p>
+        <img src={Image30} alt="" />
       </div>
       <div className="Box">
         <h1>
           Why is isMounted() an anti-pattern and what is the proper solution?
         </h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          The <b>isMounted()</b> method is an anti-pattern because it is a part
+          of the React API that has been deprecated and is no longer recommended
+          for use. The <b>isMounted()</b> method was originally introduced as a
+          way to check if a component was still mounted to the DOM, but it has
+          since been removed from the React API because it can lead to problems
+          with code that is difficult to debug.
+        </p>
+        <p>
+          The proper solution to the problem of checking if a component is
+          mounted is to use the component's lifecycle methods. In particular,
+          you can use the <b>componentDidMount()</b> and{" "}
+          <b>componentWillUnmount() </b>
+          methods to perform actions when a component is mounted or unmounted,
+          respectively.
         </p>
       </div>
       <div className="Box">
         <h1>What are the Pointer Events supported in React? </h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          Pointer events are a type of event in React that allow you to handle
+          events such as touch, mouse, and pen input in a single set of events.
+          The pointer events supported in React are:
+        </p>
+        <p>
+          <b>onPointerDown</b>: This event is triggered when a pointer is
+          pressed down on an element.
+        </p>
+        <p>
+          <b>onPointerMove</b>: This event is triggered when a pointer moves
+          over an element.
+        </p>
+        <p>
+          <b>onPointerUp</b>: This event is triggered when a pointer is released
+          from an element.
+        </p>
+        <p>
+          <b>onPointerCancel</b>: This event is triggered when a pointer is
+          cancelled, for example if the user moves their finger off the screen
+          while interacting with a touch-based element.
+        </p>
+        <p>
+          <b>onPointerEnter</b>: This event is triggered when a pointer enters
+          an element.
+        </p>
+        <p>
+          <b>onPointerLeave</b>: This event is triggered when a pointer leaves
+          an element.
+        </p>
+        <p>
+          <b>onPointerOver</b>: This event is triggered when a pointer is
+          hovering over an element.
+        </p>
+        <p>
+          <b>onPointerOut</b>: This event is triggered when a pointer is no
+          longer hovering over an element.
+        </p>
+        <p>
+          <b>onGotPointerCapture</b>: This event is triggered when an element
+          receives pointer capture.
+        </p>
+        <p>
+          <b>onLostPointerCapture</b>: This event is triggered when an element
+          loses pointer capture.
         </p>
       </div>
       <div className="Box">
         <h1>Why should component names start with capital letter?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          In React, it is a convention to start component names with a capital
+          letter. This is because React treats components that start with a
+          capital letter as a special type of component called a "stateful
+          component" or a "class component", while components that start with a
+          lowercase letter are treated as a "functional component".
         </p>
       </div>
       <div className="Box">
         <h1>Are custom DOM attributes supported in React v16? </h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          Yes, custom DOM attributes are supported in React v16. You can add
+          custom attributes to DOM elements in React by using the <b>data-</b>{" "}
+          prefix, followed by the attribute name.
+        </p>
+        <img src={Image31} alt="" />
+        <p>
+          You can then access the value of the attribute using the{" "}
+          <b>dataset </b>
+          property of the DOM element. For example:
+        </p>
+        <img src={Image32} alt="" />
+        <p>
+          Note that custom attributes are not a part of the official DOM
+          specification, and their support may vary across browsers. They are
+          primarily used as a way to store data associated with an element that
+          is not intended to be used by the browser or by CSS.
         </p>
       </div>
       <div className="Box">
         <h1>What is the difference between constructor and getInitialState?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          In a React component, the <b>constructor</b> function is a special
+          function that is called when an instance of the component is created.
+          It is typically used to initialize the component's state and to bind
+          event handlers to the component instance.
+        </p>
+        <p>
+          The <b>getInitialState</b> function, on the other hand, is a method
+          that was used in older versions of React to return the initial state
+          of a component. It has been replaced by the <b>constructor</b>{" "}
+          function in recent versions of React.
         </p>
       </div>
       <div className="Box">
@@ -1320,9 +1458,17 @@ const App = () => {
           Can you force a component to re-render without calling setState?
         </h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          There are a few ways to force a React component to re-render without
+          calling setState. One way is to use the <b>forceUpdate</b> method of
+          the component instance. This method will skip the normal lifecycle
+          methods and immediately re-render the component.
+        </p>
+        <img src={Image33} alt="" />
+        <p>
+          Another way to force a component to re-render is to change the{" "}
+          <b>key </b>
+          prop of the component. When the key prop changes, React will unmount
+          the old component and create a new one, causing it to re-render.
         </p>
       </div>
       <div className="Box">
@@ -1331,81 +1477,206 @@ const App = () => {
           ES6 classes?
         </h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          The <b>super(props)</b> syntax is used to pass the <b>props</b>{" "}
+          argument to the parent class's constructor function. This is typically
+          used to access the props of the component in the parent class.
+        </p>
+        <img src={Image35} alt="" />
+        <p>
+          {" "}
+          the <b>super</b> keyword refers to the parent class (i.e., the class
+          that the current class extends). When calling <b>super()</b>, you are
+          calling the parent class's constructor function.
+        </p>
+        <img src={Image34} alt="" />
+        <p>
+          The <b>super()</b> call must be the first statement in the constructor
+          function. If you do not call <b>super()</b> in the constructor, you
+          will receive an error.
         </p>
       </div>
       <div className="Box">
         <h1>How to loop inside JSX?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          You can use a <b>map</b> function to loop through the array and render
+          a list of elements
+        </p>
+        <p>For example, given an array of names:</p>
+        <img src={Image36} alt="" />
+        <img src={Image37} alt="" />
+        <p>
+          it is generally recommended to use the <b>map</b> function, as it is
+          more concise and easier to read.{" "}
         </p>
       </div>
       <div className="Box">
         <h1>How do you access props in attribute quotes?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          In JSX, you can access the <b>props</b> of a component inside
+          attribute quotes by using curly braces.
+        </p>
+        <p>
+          For example, given a component with a <b>name</b> prop:
+        </p>
+        <img src={Image38} alt="" />
+        <p>
+          You can use the <b>props.name</b> value as the value of an attribute
+          like this:
+        </p>
+        <img src={Image39} alt="" />
+        <p>
+          In this example, the <b>disabled</b> attribute of the <b>button</b>{" "}
+          element will be set to <b>true</b> if the <b>name</b> prop of the{" "}
+          <b>MyComponent</b> element is equal to "Alice".
+        </p>
+        <p>
+          You can also use expressions and functions inside the curly braces to
+          compute the value of an attribute. For example:
+        </p>
+        <img src={Image40} alt="" />
+        <p>
+          In this example, the <b>disabled</b> attribute of the <b>button</b>{" "}
+          element will be set to <b>true</b> if the <b>name</b> prop of the{" "}
+          <b>MyComponent</b> element has a length greater than 5.
         </p>
       </div>
       <div className="Box">
         <h1>What is React proptype array with shape?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          In React, the <b>prop-types</b> library is used to validate the props
+          being passed to a component. The <b>arrayOf</b> method is used to
+          check that an array prop only contains a certain type of element, and
+          the <b>shape</b> method is used to check the types of the elements in
+          an array of objects.
+        </p>
+        <p>
+          Here's an example of how you might use the <b>arrayOf</b> and{" "}
+          <b>shape</b> methods together:
+        </p>
+        <img src={Image41} alt="" />
+        <p>
+          This would ensure that the <b>users</b> prop is an array of objects,
+          and that each object in the array has a <b>name</b> prop that is a
+          string, an <b>age</b> prop that is a number, and a gender prop that is
+          either <b>'male'</b> or <b>'female'</b>.
         </p>
       </div>
       <div className="Box">
         <h1>How to conditionally apply class attributes?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          In React, you can conditionally apply class names to an element by
+          using a ternary operator to decide which class names to include.
+          Here's an example of how you might do this:
         </p>
+        <img src={Image42} alt="" />
       </div>
       <div className="Box">
         <h1>What is the difference between React and ReactDOM?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          <b>React</b> is a JavaScript library for building user interfaces,
+          while <b>ReactDOM</b> is a package that provides DOM-specific methods
+          that can be used at the top level of your app.
+        </p>
+        <p>
+          {" "}
+          <b>React</b> is the main package, and it provides a declarative
+          interface for creating and rendering UI components. It allows you to
+          describe your UI using a virtual representation of the DOM, and it
+          will take care of rendering the actual DOM elements and updating them
+          when necessary.{" "}
+        </p>
+        <p>
+          {" "}
+          <b>ReactDOM</b> is a separate package that provides DOM-specific
+          methods that can be used to render React components to the DOM. It
+          provides a way to take the output of your React components and apply
+          it to the actual DOM elements in the browser.{" "}
+        </p>
+        <p>
+          In most cases, you will only need to use the React package and not
+          <b>ReactDOM</b> directly. However, if you are using React in a
+          non-browser environment (such as a server-side rendering library), you
+          will need to use a different renderer, such as ReactDOMServer, in
+          order to render your components to a string of HTML.
         </p>
       </div>
       <div className="Box">
         <h1>Why ReactDOM is separated from React?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          <b>React</b> and <b>ReactDOM</b> are two different libraries that are
+          designed to work together.
+        </p>
+        <p>
+          <b>React</b> is a JavaScript library for building user interfaces. It
+          provides a declarative way to specify the component hierarchy and the
+          components' state and behavior. It's designed to be used in the
+          browser, but it can also be used on the server or in native apps.
+        </p>
+        <p>
+          <b>ReactDOM</b> is a separate library that provides DOM-specific
+          methods that can be used to render React components to the DOM. It
+          provides a simple way to take a tree of React components and turn it
+          into a tree of DOM nodes.
+        </p>
+        <p>
+          By separating the two libraries, it's possible to use <b>React</b> in
+          different environments, such as on the server or in native apps,
+          without having to include the DOM-specific methods provided by
+          <b>ReactDOM</b>. It also makes it easier to update and maintain the
+          two libraries independently.
         </p>
       </div>
       <div className="Box">
         <h1>How to use React label element?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          The <b>label</b> element in React can be used to add a <b>label</b> to
+          a form element such as an input or a select. To use a label element in
+          a form in React, you can do the following:
+        </p>
+        <p>
+          Import the <b>label</b> element from the <b>react-dom</b> library:
+        </p>
+        <img src={Image43} alt="" />
+        <p>
+          Use the <b>label</b> element to wrap the form element that you want to
+          label. You can then set the <b>htmlFor</b> attribute of the{" "}
+          <b>label</b> element to the <b>id</b> of the form element that you
+          want to label.
+        </p>
+        <p>
+          For example, to create a label for a text input, you can do the
+          following:
+        </p>
+        <img src={Image44} alt="" />
+        <p>
+          This will create a label that reads <b>"Input:"</b> and is associated
+          with the text input. When the user clicks on the <b>label</b>, the
+          input will receive focus.
         </p>
       </div>
       <div className="Box">
         <h1>How to combine multiple inline style objects?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          In React, you can combine multiple inline style objects into a single
+          style object by using the <b>Object.assign()</b> method or the spread
+          operator <b>(...)</b>.
         </p>
+        <p>
+          Here's an example of how you can use <b>Object.assign()</b> to combine
+          two style objects:
+        </p>
+        <img src={Image45} alt="" />
       </div>
       <div className="Box">
         <h1>How to re-render the view when the browser is resized?</h1>
+        <p>you can re-render a React component when the browser is resized:</p>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          Using the <b>useEffect</b> hook: If you are using functional
+          components and the <b>useEffect</b> hook, you can use the{" "}
+          <b>useEffect</b> hook to trigger a re-render of the component when the
+          browser is resized. To do this, you can set up an event listener in
+          the <b>useEffect</b> hook and call the
+          <b> setState</b> function to trigger a re-render.
         </p>
       </div>
       <div className="Box">
@@ -1413,18 +1684,53 @@ const App = () => {
           What is the difference between setState() and replaceState() methods?
         </h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          In React, the <b>setState()</b> method is used to update the state of
+          a component and trigger a re-render of the component. It merges the
+          new state with the previous state.
         </p>
+        <p>
+          On the other hand, the <b>replaceState() </b> method was used in older
+          versions of React to completely replace the current state with a new
+          state. It has been deprecated and removed in the latest versions of
+          React.
+        </p>
+        <p>
+          Here is an example of how <b>setState()</b> can be used:
+        </p>
+        <img src={Image46} alt="" />
       </div>
       <div className="Box">
         <h1>How to listen to state changes? </h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          There are a few different ways that you can listen for changes to the
+          state of a React component:
         </p>
+        <p>
+          <b>Learn tomorrow </b> #1 Use the <b>componentDidUpdate</b> lifecycle
+          method: The componentDidUpdate lifecycle method is called after a
+          component's updates are flushed to the DOM. You can use this method to
+          perform an action after the component's state has been updated.{" "}
+        </p>
+        <img src={Image47} alt="" />
+        <p>
+          {" "}
+          <b>Learn tomorrow</b> #2 Use the <b>shouldComponentUpdate</b>{" "}
+          lifecycle method: The <b>shouldComponentUpdate</b> lifecycle method is
+          called before a component's updates are flushed to the DOM. You can
+          use this method to perform a comparison between the current and
+          previous props and state and return a boolean value indicating whether
+          the component should update. If you return <b>false</b>, the component
+          will not update.
+        </p>
+        <img src={Image48} alt="" />
+        <p>
+          #3 Use the <b>useEffect</b> hook: If you are using functional
+          components and the <b>useEffect</b> hook, you can use the{" "}
+          <b>useEffect</b> hook to listen for changes to the component's state.
+          The <b>useEffect</b> hook is called after every render, including the
+          initial render.{" "}
+        </p>
+        <img src={Image49} alt="" />
       </div>
       <div className="Box">
         <h1>
