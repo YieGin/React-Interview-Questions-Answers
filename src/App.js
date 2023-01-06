@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./App.css";
 import Image1 from "./Images/image.png";
@@ -47,7 +47,18 @@ import Image46 from "./Images/46.png";
 import Image47 from "./Images/47.png";
 import Image48 from "./Images/48.png";
 import Image49 from "./Images/49.png";
+import Image50 from "./Images/50.png";
+import Image51 from "./Images/51.png";
+import Image52 from "./Images/52.png";
+import Image53 from "./Images/53.png";
+import Image54 from "./Images/54.png";
+import Image55 from "./Images/55.png";
+import Image56 from "./Images/56.png";
+import Image57 from "./Images/57.png";
+
 const App = () => {
+  const [open, setOpen] = useState({});
+
   return (
     <div className="Main">
       <div className="content">
@@ -99,9 +110,23 @@ const App = () => {
           functional component:
         </p>
         <p>Here's an example of a functional component:</p>
-        <img src={Image6} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image6}
+          alt=""
+        />
         <p>Here's an example of a class-based component:</p>
-        <img src={Image7} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image7}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>When to use a Class Component over a Function Component?</h1>
@@ -210,12 +235,26 @@ const App = () => {
           the MyComponent instance and pass it as the event handler for the
           button:
         </p>
-        <img src={Image8} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image8}
+          alt=""
+        />
         <p>
           Alternatively, you can use an <b>arrow function</b> in the callback to
           ensure that the correct this value is used:
         </p>
-        <img src={Image9} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image9}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>How to pass a parameter to an event handler or callback?</h1>
@@ -224,11 +263,32 @@ const App = () => {
           callback in JavaScript. Here are three common approaches:
         </p>
         <p>Using an anonymous function:</p>
-        <img src={Image10} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image10}
+          alt=""
+        />
         <p>Using an arrow function:</p>
-        <img src={Image11} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image11}
+          alt=""
+        />
         <p>Using the bind method:</p>
-        <img src={Image12} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image12}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>What are synthetic events in React?</h1>
@@ -391,7 +451,14 @@ const App = () => {
           allows a user to enter their name. In a traditional HTML form, the
           value of the text input field would be determined by the user's input.
         </p>
-        <img src={Image14} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image14}
+          alt=""
+        />
         <p>
           In this example, the <b>input</b> element is now a controlled
           component because the value of the <b>input</b> is set by the parent
@@ -412,7 +479,14 @@ const App = () => {
           input field would be determined by the user's input, rather than being
           controlled by the component's state.
         </p>
-        <img src={Image13} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image13}
+          alt=""
+        />
         <p>
           In this example, the <b>input</b> element is an uncontrolled component
           because it manages its own state (the value of the text input by the
@@ -576,7 +650,15 @@ const App = () => {
           component. To set the state with a dynamic key name, you can use
           computed property names, which are supported in JavaScript.
         </p>
-        <img className="Image1" src={Image1} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          className="Image1"
+          src={Image1}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>
@@ -600,7 +682,14 @@ const App = () => {
           is a way of exporting a specific value or function from a module, and
           giving it a specific name.
         </p>
-        <img src={Image16} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image16}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>Why React uses className over class attribute?</h1>
@@ -671,7 +760,14 @@ const App = () => {
           running the following command:
         </p>
         <b>npm install prop-types</b>
-        <img src={Image2} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image2}
+          alt=""
+        />
         <p>
           In this example, we are specifying that the <b>message</b> prop of
           MyComponent should be a required <b>string</b>. If the prop is not a
@@ -808,7 +904,14 @@ const App = () => {
           an element that already exists in the DOM, or it can be a new element
           that you want to create.
         </p>
-        <img src={Image19} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image19}
+          alt=""
+        />
         <p>
           This code will render the element to the DOM <b>element</b> with an ID
           of <b>root</b>. The result will be that the text
@@ -828,7 +931,14 @@ const App = () => {
             renderToString(), which takes a React element and returns a string
             of HTML that represents the element. For example:
           </p>
-          <img src={Image20} alt="" />
+          <img
+            onClick={() => {
+              setOpen(!open);
+            }}
+            className={open ? "Image" : "Image_Open"}
+            src={Image20}
+            alt=""
+          />
         </p>
       </div>
 
@@ -843,7 +953,14 @@ const App = () => {
           Here is an example of how you can use <b>dangerouslySetInnerHTML</b>{" "}
           to set the inner HTML of a div element:
         </p>
-        <img src={Image3} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image3}
+          alt=""
+        />
         <p>
           In this example, the <b>html</b> prop of <b>MyComponent</b> is
           expected to contain a string of HTML, which will be set as the inner
@@ -859,14 +976,28 @@ const App = () => {
           element using the style prop. This prop takes an object with
           camelCased style properties as its value. For example:
         </p>
-        <img src={Image4} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image4}
+          alt=""
+        />
         <p>
           #2 <b>CSS classes</b>: You can apply CSS classes to a React element
           using the className prop. This prop takes a string with the{" "}
           <b>class names </b>
           separated by spaces. For example:
         </p>
-        <img src={Image5} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image5}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>How events are different in React?</h1>
@@ -915,13 +1046,27 @@ const App = () => {
           component after it has been mounted, so they are not available during
           the initial render.
         </p>
-        <img src={Image25} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image25}
+          alt=""
+        />
         <p>
           To fix this error, you can either set the initial state to a default
           value or pass the prop value as an argument to the setState method
           when the component mounts.
         </p>
-        <img src={Image26} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image26}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>How do you conditionally render components?</h1>
@@ -930,20 +1075,41 @@ const App = () => {
           #1 Using an if statement: You can use an <b>if</b> statement inside
           the render method to conditionally render a component.
         </p>
-        <img src={Image21} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image21}
+          alt=""
+        />
         <p>
           #2 Using a ternary operator: You can use a ternary operator
           <b> (? :)</b>
           inside the render method to conditionally render a component.
         </p>
-        <img src={Image22} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image22}
+          alt=""
+        />
         <p>
           #3 Using a short-circuit operator: You can use a short-circuit
           operator <b>(&&)</b> to conditionally render a component. If the
           condition before the <b>&&</b> operator is true, the component after{" "}
           <b>&&</b> will be rendered.{" "}
         </p>
-        <img src={Image23} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image23}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>Why we need to be careful when spreading props on DOM elements?</h1>
@@ -971,7 +1137,14 @@ const App = () => {
           the props that are relevant to the DOM element you are rendering. You
           can use the ... spread operator to do this:
         </p>
-        <img src={Image27} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image27}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>How you use decorators in React?</h1>
@@ -985,7 +1158,14 @@ const App = () => {
           or a higher-order component (HOC). Here is an example of how you might
           use a decorator to log the props of a component whenever it renders:
         </p>
-        <img src={Image24} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image24}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>How do you memoize a component?</h1>
@@ -1002,13 +1182,27 @@ const App = () => {
           can be a useful optimization if you have a large component tree and
           you want to avoid unnecessary re-renders.
         </p>
-        <img src={Image28} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image28}
+          alt=""
+        />
         <p>
           React.memo only works for functional components and not class-based
           components. If you need to memoize a class-based component, you can
           use the <b>React.PureComponent</b>.
         </p>
-        <img src={Image29} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image29}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>How you implement Server Side Rendering or SSR?</h1>
@@ -1335,7 +1529,14 @@ const App = () => {
           To use strict mode in a React component, you can wrap the component in
           a <b>React.StrictMode</b> element:
         </p>
-        <img src={Image30} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image30}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>
@@ -1424,13 +1625,27 @@ const App = () => {
           custom attributes to DOM elements in React by using the <b>data-</b>{" "}
           prefix, followed by the attribute name.
         </p>
-        <img src={Image31} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image31}
+          alt=""
+        />
         <p>
           You can then access the value of the attribute using the{" "}
           <b>dataset </b>
           property of the DOM element. For example:
         </p>
-        <img src={Image32} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image32}
+          alt=""
+        />
         <p>
           Note that custom attributes are not a part of the official DOM
           specification, and their support may vary across browsers. They are
@@ -1463,7 +1678,14 @@ const App = () => {
           the component instance. This method will skip the normal lifecycle
           methods and immediately re-render the component.
         </p>
-        <img src={Image33} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image33}
+          alt=""
+        />
         <p>
           Another way to force a component to re-render is to change the{" "}
           <b>key </b>
@@ -1481,14 +1703,28 @@ const App = () => {
           argument to the parent class's constructor function. This is typically
           used to access the props of the component in the parent class.
         </p>
-        <img src={Image35} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image35}
+          alt=""
+        />
         <p>
           {" "}
           the <b>super</b> keyword refers to the parent class (i.e., the class
           that the current class extends). When calling <b>super()</b>, you are
           calling the parent class's constructor function.
         </p>
-        <img src={Image34} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image34}
+          alt=""
+        />
         <p>
           The <b>super()</b> call must be the first statement in the constructor
           function. If you do not call <b>super()</b> in the constructor, you
@@ -1502,8 +1738,22 @@ const App = () => {
           a list of elements
         </p>
         <p>For example, given an array of names:</p>
-        <img src={Image36} alt="" />
-        <img src={Image37} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image36}
+          alt=""
+        />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image37}
+          alt=""
+        />
         <p>
           it is generally recommended to use the <b>map</b> function, as it is
           more concise and easier to read.{" "}
@@ -1518,12 +1768,26 @@ const App = () => {
         <p>
           For example, given a component with a <b>name</b> prop:
         </p>
-        <img src={Image38} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image38}
+          alt=""
+        />
         <p>
           You can use the <b>props.name</b> value as the value of an attribute
           like this:
         </p>
-        <img src={Image39} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image39}
+          alt=""
+        />
         <p>
           In this example, the <b>disabled</b> attribute of the <b>button</b>{" "}
           element will be set to <b>true</b> if the <b>name</b> prop of the{" "}
@@ -1533,7 +1797,14 @@ const App = () => {
           You can also use expressions and functions inside the curly braces to
           compute the value of an attribute. For example:
         </p>
-        <img src={Image40} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image40}
+          alt=""
+        />
         <p>
           In this example, the <b>disabled</b> attribute of the <b>button</b>{" "}
           element will be set to <b>true</b> if the <b>name</b> prop of the{" "}
@@ -1553,7 +1824,14 @@ const App = () => {
           Here's an example of how you might use the <b>arrayOf</b> and{" "}
           <b>shape</b> methods together:
         </p>
-        <img src={Image41} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image41}
+          alt=""
+        />
         <p>
           This would ensure that the <b>users</b> prop is an array of objects,
           and that each object in the array has a <b>name</b> prop that is a
@@ -1568,7 +1846,14 @@ const App = () => {
           using a ternary operator to decide which class names to include.
           Here's an example of how you might do this:
         </p>
-        <img src={Image42} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image42}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>What is the difference between React and ReactDOM?</h1>
@@ -1636,7 +1921,14 @@ const App = () => {
         <p>
           Import the <b>label</b> element from the <b>react-dom</b> library:
         </p>
-        <img src={Image43} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image43}
+          alt=""
+        />
         <p>
           Use the <b>label</b> element to wrap the form element that you want to
           label. You can then set the <b>htmlFor</b> attribute of the{" "}
@@ -1647,7 +1939,14 @@ const App = () => {
           For example, to create a label for a text input, you can do the
           following:
         </p>
-        <img src={Image44} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image44}
+          alt=""
+        />
         <p>
           This will create a label that reads <b>"Input:"</b> and is associated
           with the text input. When the user clicks on the <b>label</b>, the
@@ -1665,7 +1964,14 @@ const App = () => {
           Here's an example of how you can use <b>Object.assign()</b> to combine
           two style objects:
         </p>
-        <img src={Image45} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image45}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>How to re-render the view when the browser is resized?</h1>
@@ -1697,7 +2003,14 @@ const App = () => {
         <p>
           Here is an example of how <b>setState()</b> can be used:
         </p>
-        <img src={Image46} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image46}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>How to listen to state changes? </h1>
@@ -1711,7 +2024,14 @@ const App = () => {
           component's updates are flushed to the DOM. You can use this method to
           perform an action after the component's state has been updated.{" "}
         </p>
-        <img src={Image47} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image47}
+          alt=""
+        />
         <p>
           {" "}
           <b>Learn tomorrow</b> #2 Use the <b>shouldComponentUpdate</b>{" "}
@@ -1722,7 +2042,14 @@ const App = () => {
           the component should update. If you return <b>false</b>, the component
           will not update.
         </p>
-        <img src={Image48} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image48}
+          alt=""
+        />
         <p>
           #3 Use the <b>useEffect</b> hook: If you are using functional
           components and the <b>useEffect</b> hook, you can use the{" "}
@@ -1730,7 +2057,14 @@ const App = () => {
           The <b>useEffect</b> hook is called after every render, including the
           initial render.{" "}
         </p>
-        <img src={Image49} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image49}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>
@@ -1738,76 +2072,690 @@ const App = () => {
           state?
         </h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          In a functional component, you can use the <b>useState</b> hook to
+          manage state in a function component. To remove an element from an
+          array in state, you can use the <b>filter</b> method to create a new
+          array that excludes the element you want to remove. Here's an example
+          of how you could do this:
         </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image50}
+          alt=""
+        />
+        <p>
+          This will render a list of items with a <b>"Remove"</b> button next to
+          each item. When the button is clicked, the <b>handleRemove</b>{" "}
+          function will be called with the item to remove as an argument, and
+          the <b>setItems</b> function will be called with a new array that
+          excludes the item.
+        </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image51}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>Is it possible to use React without rendering HTML?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          Yes, it is possible to use React without rendering HTML. React is a
+          flexible JavaScript library that can be used to build user interfaces
+          for a variety of platforms, not just the web. React can also be used
+          to render components to other types of environments, such as native
+          mobile apps using React Native or desktop apps using React Electron.
+        </p>
+        <p>
+          For example, you could use React to build a mobile app that runs on
+          iOS and Android by using React Native to render native components for
+          each platform. The code that you write with React would be the same on
+          both platforms, but the components would be rendered as native iOS and
+          Android components, respectively.
+        </p>
+        <p>
+          In summary, React can be used to build user interfaces for a variety
+          of platforms, and you do not have to use HTML to do so.
         </p>
       </div>
       <div className="Box">
         <h1>How to pretty print JSON with React?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          you can use the <b>JSON.stringify</b> function and pass in the{" "}
+          <b>json</b> object as the first argument and an object with the{" "}
+          <b>space</b> option set to <b>2</b> as the second argument. This will
+          return a string representation of the JSON object with indentation and
+          line breaks.
         </p>
+        <p>
+          You can then render this string in your React component using the{" "}
+          <b>pre</b> element to preserve the formatting. Here's an example of
+          how you could do this:
+        </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image52}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>Why you can't update props in React?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          It is not true that you cannot update props in React. You can pass new
+          prop values to a component and the component will re-render with the
+          new prop values.
         </p>
       </div>
       <div className="Box">
         <h1>How to focus an input element on page load?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          To focus an input element in a React component on page load, you can
+          use the <b>useRef</b> hook and the focus method of the <b>current</b>{" "}
+          property of the ref.
         </p>
+        <p>Here is an example of how you might do this:</p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image53}
+          alt=""
+        />
+        <p>
+          you can also use the <b>autoFocus</b> prop of the <b>input</b> element
+          to focus it on page load:
+        </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image54}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>What are the possible ways of updating objects in state?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          #1 Using a setter function: Many programming languages and state
+          management libraries provide setter functions that allow you to update
+          the state in a controlled, predictable way. For example, in React, you
+          can use the <b>setState</b> function to update the state of a
+          component.
+        </p>
+        <p>
+          #2 Mutating the object directly: In some languages, such as
+          JavaScript, you can directly modify the properties of an object stored
+          in state. For example, you could write{" "}
+          <b>myObject.property = 'new value' </b>
+          to change the value of a property on an object stored in state.
         </p>
       </div>
       <div className="Box">
         <h1>How can we find the version of React at runtime in the browser?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          You can find the version of React that is being used in your
+          application at runtime by accessing the <b>React.version</b> property.
+          This property returns a string containing the version number of React
+          that is being used.
         </p>
+        <p>
+          Here is an example of how you might access the version of React at
+          runtime in a browser:
+        </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image55}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>
           What are the approaches to include polyfills in your create-react-app?
         </h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          If you are using create-react-app to build your React application,
+        </p>
+        <p>
+          Include polyfills manually: If you want to include specific polyfills
+          in your application, you can do so by manually importing them at the
+          top of your application entry point (e.g. <b>index.js</b>). For
+          example, you could include a polyfill for the fetch function by adding
+          the following line to your code: <b>import 'whatwg-fetch'</b> ;
         </p>
       </div>
       <div className="Box">
         <h1>How to use https instead of http in create-react-app?</h1>
         <p>
-          React is a JavaScript library for building user interfaces. It was
-          developed by Facebook, and is often used for building single-page
-          applications and mobile applications.
+          To use <b>https</b> instead of <b>http</b> in a create-react-app
+          project, you will need to set the HTTPS environment variable to{" "}
+          <b>true</b> and start the development server using <b>npm start</b> or{" "}
+          <b> yarn start</b>. This will cause the development server to use
+          https to serve your app.
         </p>
+        <p>
+          Here's an example of how you can set the <b>HTTPS</b> environment
+          variable and start the development server:
+        </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image56}
+          alt=""
+        />
+        <p>
+          Alternatively, you can also set the <b>HTTPS</b> environment variable
+          in the <b>.env</b> file in the root of your create-react-app project:
+        </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image57}
+          alt=""
+        />
+        <p>
+          Once you have set the <b>HTTPS</b> environment variable, the
+          development server will automatically use <b>https</b> to serve your
+          app.
+        </p>
+      </div>
+      <div>
+        <h1>How to avoid using relative path imports in create-react-app?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to add Google Analytics for React Router?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to update a component every second?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How do you apply vendor prefixes to inline styles in React?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to import and export components using React and ES6?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>Why is a component constructor called only once?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to define constants in React?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to programmatically trigger click event in React?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>Is it possible to use async/await in plain React?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are the common folder structures for React?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are the popular packages for animation?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is the benefit of styles modules?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are the popular React-specific linters?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>
+          How to make AJAX call and in which component lifecycle methods should
+          I make an AJAX call?
+        </h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are render props?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is React Router?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How React Router is different from history library?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>
+          What are the <b>Router</b> components of React Router v4?
+        </h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is the purpose of push() and replace() methods of history?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How do you programmatically navigate using React Router v4?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to get query parameters in React Router v4?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>Why you get "Router may have only one child element" warning?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to pass params to history.push method in React Router v4?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to implement default or NotFound page?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to get history on React Router v4?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to perform automatic redirect after login?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is React Intl?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are the main features of React Intl?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are the two ways of formatting in React Intl?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>
+          How to use <b>FormattedMessage</b> as placeholder using React Intl?
+        </h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to access current locale with React Intl?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to format date using React Intl?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is Shallow Renderer in React testing?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is TestRenderer package in React?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is the purpose of ReactTestUtils package?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is Jest?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are the advantages of Jest over Jasmine?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>Give a simple example of Jest test case</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is flux?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is Redux?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are the core principles of Redux?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are the downsides of Redux compared to Flux?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>
+          What is the difference between mapStateToProps() and
+          mapDispatchToProps()?
+        </h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>Can I dispatch an action in reducer?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are the drawbacks of MVW pattern?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>Are there any similarities between Redux and RxJS?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to dispatch an action on load?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to use connect() from React Redux?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to reset state in Redux?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>Whats the purpose of at symbol in the Redux connect decorator?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is the difference between React context and React Redux?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>Why are Redux state functions called reducers?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to make AJAX request in Redux?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>Should I keep all component's state in Redux store?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is the proper way to access Redux store?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>
+          What is the difference between component and container in React Redux?
+        </h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is the purpose of the constants in Redux?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are the different ways to write mapDispatchToProps()?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>
+          What is the use of the ownProps parameter in mapStateToProps() and
+          mapDispatchToProps()?
+        </h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to structure Redux top level directories?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is redux-saga?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is the mental model of redux-saga?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>
+          What are the differences between call() and put() in redux-saga?
+        </h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is Redux Thunk?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are the differences between redux-saga and redux-thunk?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is Redux DevTools?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are the features of Redux DevTools?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are Redux selectors and why to use them?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is Redux Form?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to add multiple middlewares to Redux?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to set initial state in Redux?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How Relay is different from Redux?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is an action in Redux?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is the difference between React Native and React?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to test React Native apps?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to do logging in React Native?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to debug your React Native?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is reselect and how it works?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is Flow?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is the difference between Flow and PropTypes?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to use Font Awesome icons in React?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is React Dev Tools?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>Why is DevTools not loading in Chrome for local files?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to use Polymer in React?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are the advantages of React over Vue.js?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is the difference between React and Angular?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>Why React tab is not showing up in DevTools?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are Styled Components?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>Give an example of Styled Components?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is Relay?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to use TypeScript in create-react-app application?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are the main features of Reselect library?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>Give an example of Reselect usage?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>Does the statics object work with ES6 classes in React?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>Can Redux only be used with React?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>Do you need to have a particular build tool to use Redux?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How Redux Form initialValues get updated from state?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How React PropTypes allow different types for one prop?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>Can I import an SVG file as react component?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>Why are inline ref callbacks or functions not recommended?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is render hijacking in react?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are HOC factory implementations?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to pass numbers to React component?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>
+          Do I need to keep all my state into Redux? Should I ever use react
+          internal state?
+        </h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is the purpose of registerServiceWorker in React?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is React memo function?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What is React lazy function?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to prevent unnecessary updates using setState?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>
+          How do you render Array, Strings and Numbers in React 16 Version?
+        </h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to use class field declarations syntax in React classes?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are hooks?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What rules need to be followed for hooks?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>How to ensure hooks followed the rules in your project?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are the differences between Flux and Redux?</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>What are the benefits of React Router V4?</h1>
+        <p></p>
       </div>
     </div>
   );
