@@ -55,6 +55,18 @@ import Image54 from "./Images/54.png";
 import Image55 from "./Images/55.png";
 import Image56 from "./Images/56.png";
 import Image57 from "./Images/57.png";
+import Image58 from "./Images/58.png";
+import Image59 from "./Images/59.png";
+import Image60 from "./Images/60.png";
+import Image61 from "./Images/61.png";
+import Image62 from "./Images/62.png";
+import Image63 from "./Images/63.png";
+import Image64 from "./Images/64.png";
+import Image65 from "./Images/65.png";
+import Image66 from "./Images/66.png";
+import Image67 from "./Images/67.png";
+import Image68 from "./Images/68.png";
+import Image69 from "./Images/69.png";
 
 const App = () => {
   const [open, setOpen] = useState({});
@@ -2277,7 +2289,16 @@ const App = () => {
       </div>
       <div>
         <h1>How to avoid using relative path imports in create-react-app?</h1>
-        <p></p>
+        <p>
+          One way to avoid using relative path imports in a create-react-app
+          project is to use the <b>src</b> alias. The <b>src</b> alias is a way
+          to reference files in the src directory of your project without having
+          to use a relative path.
+        </p>
+        <p>For example, instead of using a relative path import like this:</p>
+        <img src={Image58} alt="" />
+        <p>You can use the src alias like this:</p>
+        <img src={Image59} alt="" />
       </div>
       <div>
         <h1>How to add Google Analytics for React Router?</h1>
@@ -2285,39 +2306,177 @@ const App = () => {
       </div>
       <div>
         <h1>How to update a component every second?</h1>
-        <p></p>
+        <p>
+          To update a component every second, you can use the <b>setInterval</b>{" "}
+          function in JavaScript. Here is an example of how you can use{" "}
+          <b>setInterval</b> to update a component every second:
+        </p>
+        <img src={Image60} alt="" />
+        <p>
+          The <b>useEffect</b> hook is used to set up the interval, and the{" "}
+          <b>clearInterval</b> function is used to clear the interval when the
+          component unmounts. The <b>setInterval</b> function will update the{" "}
+          <b>count</b> state variable every second, which will cause the
+          component to re-render with the updated <b>count</b> value.
+        </p>
       </div>
       <div>
         <h1>How do you apply vendor prefixes to inline styles in React?</h1>
-        <p></p>
+        <p>
+          To apply vendor prefixes to inline styles in React using JavaScript,
+          you can use the <b>style</b> attribute and include vendor prefixes as
+          needed.
+        </p>
+        <p>For example:</p>
+        <img src={Image61} alt="" />
       </div>
       <div>
         <h1>How to import and export components using React and ES6?</h1>
-        <p></p>
+        <p>
+          To import a component in React using ES6, you can use the{" "}
+          <b>"import"</b> statement. Here's an example:
+        </p>
+        <img src={Image62} alt="" />
+        <p>
+          In this example, the <b>import</b> statement is used to import the{" "}
+          <b>React</b> library, as well as a custom component called{" "}
+          <b>MyComponent</b> , which is located in a file called MyComponent.js
+          in the same directory as the current file.
+        </p>
+        <p>
+          To export a component in React using ES6, you can use the{" "}
+          <b>"export"</b> statement. Here's an example of how you might do this:
+        </p>
+        <img src={Image63} alt="" />
       </div>
       <div>
         <h1>Why is a component constructor called only once?</h1>
-        <p></p>
+        <p>
+          When a component is created, the component's constructor is called
+          before the component is mounted. The component's constructor is the
+          ideal place to set up the initial state of the component and to bind
+          any event handlers to the component instance.
+        </p>
+        <p>
+          After the component is mounted, the component's <b>render()</b> method
+          is called whenever the component's state or props change. However, the
+          component's constructor is not called again. This means that the
+          component's constructor is called only once, at the beginning of the
+          component's lifecycle.
+        </p>
+        <p>
+          This can be a useful optimization, because it means that the
+          component's constructor does not need to be called every time the
+          component's state or props change. Instead, the component can simply
+          update its state and re-render itself using the updated state.
+        </p>
       </div>
       <div>
         <h1>How to define constants in React?</h1>
-        <p></p>
+        <p>
+          Using the <b>const</b> keyword: You can define a constant using the{" "}
+          <b>const</b> keyword, like this:
+        </p>
+        <img src={Image64} alt="" />
+        <p>
+          Using the <b>static</b> keyword: If you are defining a constant within
+          a class, you can use the <b>static</b> keyword to define a class-level
+          constant. For example:
+        </p>
+        <img src={Image65} alt="" />
       </div>
       <div>
         <h1>How to programmatically trigger click event in React?</h1>
-        <p></p>
+        <p>
+          you can use the <b>onClick</b> event handler and call the <b>click</b>{" "}
+          method on the element that you want to trigger the click event for.
+        </p>
+        <img src={Image66} alt="" />
       </div>
       <div>
         <h1>Is it possible to use async/await in plain React?</h1>
-        <p></p>
+        <p>
+          Yes, it is possible to use <b>async/await</b> in plain React.{" "}
+          <b>async/await</b> are JavaScript language features that make it
+          easier to work with asynchronous code, and they can be used in any
+          JavaScript code, including code that uses React.
+        </p>
+        <p>
+          Here's an example of how you can use <b>async/await</b> in a React
+          component:
+        </p>
+        <img src={Image67} alt="" />
       </div>
       <div>
         <h1>What are the common folder structures for React?</h1>
-        <p></p>
+        <p>
+          #1 <b>Flat structure</b>: In this structure, all of the project's
+          files and folders are stored directly in the root directory. This is a
+          simple structure that is easy to set up and is well-suited for small
+          projects.
+        </p>
+        <p>
+          #2 <b>Component-based structure</b>: In this structure, the project is
+          organized into a folder for each component, with each component's
+          files (e.g., JavaScript, CSS, tests) stored in the corresponding
+          folder. This structure is well-suited for projects with a large number
+          of components and is a good choice for organizing large projects.
+        </p>
+        <p>
+          #3 <b>Feature-based structure</b>: In this structure, the project is
+          organized into a folder for each feature or page, with each feature's
+          files (e.g., components, reducers, actions) stored in the
+          corresponding folder. This structure is well-suited for projects with
+          a large number of features or pages and helps to keep the project
+          organized as it grows.
+        </p>
+        <p>
+          #4 <b>Hybrid structure</b>: In this structure, the project is
+          organized using a combination of the component-based and feature-based
+          structures. This structure is useful when you want to combine the
+          benefits of both structures and is well-suited for projects with a mix
+          of components and features.
+        </p>
+        <p>
+          It's important to note that the folder structure for a React project
+          is not tied to any specific version of React. The folder structure
+          that you choose should be based on the needs of your project and
+          should be designed to make it easy for you and your team to work with
+          the code.
+        </p>
       </div>
       <div>
         <h1>What are the popular packages for animation?</h1>
-        <p></p>
+        <p>
+          Styles modules allow you to write modular and reusable styles in your
+          web development projects. There are several benefits to using styles
+          modules, some of which include:
+        </p>
+        <p>
+          #1 <b>Modularity</b>: Styles modules allow you to break up your styles
+          into smaller, more manageable chunks, making it easier to maintain and
+          scale your project.
+        </p>
+        <p>
+          #2 <b>Reusability</b>: Styles written in a styles module can be easily
+          reused across different components or pages in your project, reducing
+          duplication and making your code more efficient.
+        </p>
+        <p>
+          #3 <b>Encapsulation</b>: Styles written in a styles module are scoped
+          to that module, meaning they won't affect any other parts of your
+          project. This helps to prevent conflicts and makes it easier to reason
+          about the design of your project.
+        </p>
+        <p>
+          Here is an example of a styles module in a project using CSS Modules:
+        </p>
+        <img src={Image68} alt="" />
+        <p>
+          To use the styles in this module, you would import them into your
+          component file like this:
+        </p>
+        <img src={Image69} alt="" />
       </div>
       <div>
         <h1>What is the benefit of styles modules?</h1>
