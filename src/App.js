@@ -67,6 +67,8 @@ import Image66 from "./Images/66.png";
 import Image67 from "./Images/67.png";
 import Image68 from "./Images/68.png";
 import Image69 from "./Images/69.png";
+import Image70 from "./Images/70.png";
+import Image71 from "./Images/71.png";
 
 const App = () => {
   const [open, setOpen] = useState({});
@@ -2287,7 +2289,7 @@ const App = () => {
           app.
         </p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to avoid using relative path imports in create-react-app?</h1>
         <p>
           One way to avoid using relative path imports in a create-react-app
@@ -2300,11 +2302,11 @@ const App = () => {
         <p>You can use the src alias like this:</p>
         <img src={Image59} alt="" />
       </div>
-      <div>
+      <div className="Box">
         <h1>How to add Google Analytics for React Router?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to update a component every second?</h1>
         <p>
           To update a component every second, you can use the <b>setInterval</b>{" "}
@@ -2320,7 +2322,7 @@ const App = () => {
           component to re-render with the updated <b>count</b> value.
         </p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How do you apply vendor prefixes to inline styles in React?</h1>
         <p>
           To apply vendor prefixes to inline styles in React using JavaScript,
@@ -2330,7 +2332,7 @@ const App = () => {
         <p>For example:</p>
         <img src={Image61} alt="" />
       </div>
-      <div>
+      <div className="Box">
         <h1>How to import and export components using React and ES6?</h1>
         <p>
           To import a component in React using ES6, you can use the{" "}
@@ -2349,7 +2351,7 @@ const App = () => {
         </p>
         <img src={Image63} alt="" />
       </div>
-      <div>
+      <div className="Box">
         <h1>Why is a component constructor called only once?</h1>
         <p>
           When a component is created, the component's constructor is called
@@ -2371,7 +2373,7 @@ const App = () => {
           update its state and re-render itself using the updated state.
         </p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to define constants in React?</h1>
         <p>
           Using the <b>const</b> keyword: You can define a constant using the{" "}
@@ -2385,7 +2387,7 @@ const App = () => {
         </p>
         <img src={Image65} alt="" />
       </div>
-      <div>
+      <div className="Box">
         <h1>How to programmatically trigger click event in React?</h1>
         <p>
           you can use the <b>onClick</b> event handler and call the <b>click</b>{" "}
@@ -2393,7 +2395,7 @@ const App = () => {
         </p>
         <img src={Image66} alt="" />
       </div>
-      <div>
+      <div className="Box">
         <h1>Is it possible to use async/await in plain React?</h1>
         <p>
           Yes, it is possible to use <b>async/await</b> in plain React.{" "}
@@ -2407,7 +2409,7 @@ const App = () => {
         </p>
         <img src={Image67} alt="" />
       </div>
-      <div>
+      <div className="Box">
         <h1>What are the common folder structures for React?</h1>
         <p>
           #1 <b>Flat structure</b>: In this structure, all of the project's
@@ -2445,7 +2447,7 @@ const App = () => {
           the code.
         </p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What are the popular packages for animation?</h1>
         <p>
           Styles modules allow you to write modular and reusable styles in your
@@ -2478,441 +2480,505 @@ const App = () => {
         </p>
         <img src={Image69} alt="" />
       </div>
-      <div>
-        <h1>What is the benefit of styles modules?</h1>
-        <p></p>
-      </div>
-      <div>
+      <div className="Box">
         <h1>What are the popular React-specific linters?</h1>
-        <p></p>
+        <p>
+          There are several popular linters that are specifically designed to
+          work with React code:
+        </p>
+        <p>
+          #1 ESLint: ESLint is a popular JavaScript linter that can be used to
+          lint React code. There are several plugins available that extend
+          ESLint's capabilities to include React-specific rules.
+        </p>
+        <p>
+          #2 react-codemod: This is a tool that can be used to automatically
+          transform React code to follow certain conventions or to fix common
+          issues.
+        </p>
+        <p>
+          #3 react-perf-tool: This is a performance analysis tool that helps to
+          identify bottlenecks in React components.
+        </p>
+        <p>
+          #4 react-a11y: This is a linter that checks for accessibility issues
+          in React components.
+        </p>
+        <p>
+          #5 react-beautify: This is a tool that can be used to automatically
+          reformat React code to follow a specific style guide.
+        </p>
       </div>
-      <div>
+      <div className="Box">
         <h1>
           How to make AJAX call and in which component lifecycle methods should
           I make an AJAX call?
         </h1>
-        <p></p>
+        <p>
+          To make an AJAX call in a React application, you can use the{" "}
+          <b>axios</b>{" "}
+        </p>
+        <img src={Image67} alt="" />
       </div>
-      <div>
+      <div className="Box">
         <h1>What are render props?</h1>
-        <p></p>
+        <p>
+          In React, a <b>"render prop"</b> is a function prop that a component
+          uses to know what to render. It's called a <b>"render prop"</b>{" "}
+          because the prop is a function that the component uses to render
+          something.
+        </p>
+        <p>Here is an example of a component using a render prop:</p>
+        <img src={Image70} alt="" />
+        <p>
+          To use this component, you would pass a function as the <b>render</b>{" "}
+          prop when you render the <b>MyComponent</b> element:
+        </p>
+        <img src={Image71} alt="" />
       </div>
-      <div>
+      <div className="Box">
         <h1>What is React Router?</h1>
-        <p></p>
+        <p>
+          React Router is a popular library for routing in a React application.
+          It provides components for declaratively defining the routes in a
+          React application and managing the navigation between different views
+          or <b>"pages"</b> in the app.
+        </p>
+        <p>
+          React Router helps you to design the structure of the application's
+          URLs, including the nesting of routes, and handles the rendering of
+          the appropriate components for a given route. It allows you to build
+          single-page applications (SPAs) with a rich and responsive user
+          experience, as the app doesn't need to fully reload the page every
+          time the user navigates to a new route.
+        </p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How React Router is different from history library?</h1>
-        <p></p>
+        <p>
+          {" "}
+          <b>React Router</b> is a library that lets you add routing to your
+          React app, while <b>history</b> is a standalone JavaScript library
+          that lets you manage session history in a JavaScript app.
+        </p>
+        <p>
+          {" "}
+          <b>React Router</b> is built on top of the <b>history</b> library, and
+          it uses the <b>history</b> library to manage the navigation of a
+          single-page app. When you use <b>React Router</b> , you don't need to
+          explicitly use the <b>history</b> library in your code, as{" "}
+          <b>React Router</b> provides a higher-level API for managing the
+          navigation of your app.
+        </p>
       </div>
-      <div>
+      <div className="Box">
         <h1>
           What are the <b>Router</b> components of React Router v4?
         </h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is the purpose of push() and replace() methods of history?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How do you programmatically navigate using React Router v4?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to get query parameters in React Router v4?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>Why you get "Router may have only one child element" warning?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to pass params to history.push method in React Router v4?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to implement default or NotFound page?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to get history on React Router v4?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to perform automatic redirect after login?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is React Intl?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What are the main features of React Intl?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What are the two ways of formatting in React Intl?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>
           How to use <b>FormattedMessage</b> as placeholder using React Intl?
         </h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to access current locale with React Intl?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to format date using React Intl?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is Shallow Renderer in React testing?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is TestRenderer package in React?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is the purpose of ReactTestUtils package?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is Jest?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What are the advantages of Jest over Jasmine?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>Give a simple example of Jest test case</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is flux?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is Redux?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What are the core principles of Redux?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What are the downsides of Redux compared to Flux?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>
           What is the difference between mapStateToProps() and
           mapDispatchToProps()?
         </h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>Can I dispatch an action in reducer?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What are the drawbacks of MVW pattern?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>Are there any similarities between Redux and RxJS?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to dispatch an action on load?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to use connect() from React Redux?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to reset state in Redux?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>Whats the purpose of at symbol in the Redux connect decorator?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is the difference between React context and React Redux?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>Why are Redux state functions called reducers?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to make AJAX request in Redux?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>Should I keep all component's state in Redux store?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is the proper way to access Redux store?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>
           What is the difference between component and container in React Redux?
         </h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is the purpose of the constants in Redux?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What are the different ways to write mapDispatchToProps()?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>
           What is the use of the ownProps parameter in mapStateToProps() and
           mapDispatchToProps()?
         </h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to structure Redux top level directories?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is redux-saga?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is the mental model of redux-saga?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>
           What are the differences between call() and put() in redux-saga?
         </h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is Redux Thunk?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What are the differences between redux-saga and redux-thunk?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is Redux DevTools?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What are the features of Redux DevTools?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What are Redux selectors and why to use them?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is Redux Form?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to add multiple middlewares to Redux?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to set initial state in Redux?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How Relay is different from Redux?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is an action in Redux?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is the difference between React Native and React?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to test React Native apps?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to do logging in React Native?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to debug your React Native?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is reselect and how it works?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is Flow?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is the difference between Flow and PropTypes?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to use Font Awesome icons in React?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is React Dev Tools?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>Why is DevTools not loading in Chrome for local files?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to use Polymer in React?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What are the advantages of React over Vue.js?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is the difference between React and Angular?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>Why React tab is not showing up in DevTools?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What are Styled Components?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>Give an example of Styled Components?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is Relay?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to use TypeScript in create-react-app application?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What are the main features of Reselect library?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>Give an example of Reselect usage?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>Does the statics object work with ES6 classes in React?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>Can Redux only be used with React?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>Do you need to have a particular build tool to use Redux?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How Redux Form initialValues get updated from state?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How React PropTypes allow different types for one prop?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>Can I import an SVG file as react component?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>Why are inline ref callbacks or functions not recommended?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is render hijacking in react?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What are HOC factory implementations?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to pass numbers to React component?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>
           Do I need to keep all my state into Redux? Should I ever use react
           internal state?
         </h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is the purpose of registerServiceWorker in React?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is React memo function?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What is React lazy function?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to prevent unnecessary updates using setState?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>
           How do you render Array, Strings and Numbers in React 16 Version?
         </h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to use class field declarations syntax in React classes?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What are hooks?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What rules need to be followed for hooks?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>How to ensure hooks followed the rules in your project?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What are the differences between Flux and Redux?</h1>
         <p></p>
       </div>
-      <div>
+      <div className="Box">
         <h1>What are the benefits of React Router V4?</h1>
         <p></p>
       </div>
