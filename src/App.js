@@ -69,6 +69,9 @@ import Image68 from "./Images/68.png";
 import Image69 from "./Images/69.png";
 import Image70 from "./Images/70.png";
 import Image71 from "./Images/71.png";
+import Image72 from "./Images/72.png";
+import Image73 from "./Images/73.png";
+import Image74 from "./Images/74.png";
 
 const App = () => {
   const [open, setOpen] = useState({});
@@ -2575,31 +2578,136 @@ const App = () => {
         <h1>
           What are the <b>Router</b> components of React Router v4?
         </h1>
-        <p></p>
+        <p>
+          #1 <b>BrowserRouter</b>: This component is used to define the root
+          router for your app. It should be wrapped around your main application
+          component.{" "}
+        </p>
+        <p>
+          #2 <b>Route</b>: This component is used to define a route for a
+          specific path in your app. You can specify the component that should
+          be rendered when the route is active, as well as any additional props
+          that should be passed to the component.
+        </p>
+        <p>
+          #3 <b>Link</b>: This component is used to create a link to a specific
+          route in your app. It should be used in place of an anchor tag (a) to
+          avoid full page reloads when navigating between routes.
+        </p>
+        <p>
+          #4 <b>Switch</b>: This component is used to group a number of{" "}
+          <b>Route</b> components together and only render the first one that
+          matches the current location.
+        </p>
       </div>
       <div className="Box">
         <h1>What is the purpose of push() and replace() methods of history?</h1>
-        <p></p>
+        <p>
+          The <b>push()</b> method is used to navigate to a new location in the
+          history stack. This means that if you use <b>push()</b> to navigate to
+          a new route, the new route will be added to the history stack and the
+          user will be able to use the browser's back button to navigate back to
+          the previous route.
+        </p>
+        <p>
+          The <b>replace()</b> method is similar to <b>push()</b>, but it
+          replaces the current location in the history stack rather than adding
+          a new one. This means that if you use replace() to navigate to a new
+          route, the new route will replace the current route in the history
+          stack, and the user will not be able to use the back button to
+          navigate back to the previous route.
+        </p>
       </div>
       <div className="Box">
         <h1>How do you programmatically navigate using React Router v4?</h1>
-        <p></p>
+        <p>
+          To programmatically navigate using React Router v4, you can use the
+          History package it's the thing under the hood of react Router that's
+          doing all work of keeping track of the session history of the
+          application When a component is rendered by React Router, that
+          component is going to be passed three different props, <b>location</b>{" "}
+          <b>match</b> <b>history prop</b>{" "}
+        </p>
       </div>
       <div className="Box">
         <h1>How to get query parameters in React Router v4?</h1>
-        <p></p>
+        <p>
+          n React Router v4, you can use the <b>match</b> object that is passed
+          to your component props to get the query parameters.
+        </p>
+        <img src={Image72} alt="" />
+        <p>
+          In this example, <b>MyComponent</b> is a component that is being
+          rendered by a <b>Route</b> component from the <b>react-router-dom</b>{" "}
+          library. The <b>withRouter</b> higher-order component is used to give
+          the <b>MyComponent</b> access to the <b>match</b>, location, and{" "}
+          <b>history</b> props of the <b>react-router-dom</b> <b>Route</b>{" "}
+          component.
+        </p>
       </div>
       <div className="Box">
         <h1>Why you get "Router may have only one child element" warning?</h1>
-        <p></p>
-      </div>
-      <div className="Box">
-        <h1>How to pass params to history.push method in React Router v4?</h1>
-        <p></p>
+        <p>
+          In React, a <b>Router</b> component is a container that is used to
+          manage the rendering of routes in your application. Each <b>Router</b>{" "}
+          may have only one child element, which is typically a <b>Switch</b>{" "}
+          component. If you try to add more than one child element to a Router,
+          you will get a warning that says "Router may have only one child
+          element". This is because the Router is designed to manage the
+          rendering of a single set of routes, and having multiple child
+          elements would be ambiguous and potentially lead to errors.
+        </p>
+        <p>
+          To fix this warning, you should ensure that your <b>Router</b> has
+          only a single child element, which is typically a <b>Switch</b>{" "}
+          component. You can then add as many routes as you need to the Switch
+          using Route components.
+        </p>
+        <p>
+          For example, the following code would trigger the "Router may have
+          only one child element" warning:
+        </p>
+        <img src={Image73} alt="" />
+        <p>
+          To fix this code, you could wrap the two <b>div</b> elements in a{" "}
+          <b>Switch</b> like this:
+        </p>
+        <img src={Image74} alt="" />
       </div>
       <div className="Box">
         <h1>How to implement default or NotFound page?</h1>
-        <p></p>
+        <p>
+          There are a few different ways you could implement a default or{" "}
+          <b>"Not Found"</b> page for a website, depending on the specific
+          requirements of your site and the technologies you are using. Here are
+          a few options you might consider:
+        </p>
+        <p>
+          #1 <b>Redirect to a default page</b>: You can use HTTP redirects to
+          direct users to a default page when they request a URL that doesn't
+          exist on your site. For example, you might set up a redirect to send
+          all traffic from "example.com/not-found" to "example.com/default".
+        </p>
+        <p>
+          #2 <b>Use a custom error page</b>: Most web servers allow you to
+          configure custom error pages for different HTTP status codes. For
+          example, you could set up a custom "404 Not Found" page to be
+          displayed whenever a user requests a page that doesn't exist on your
+          site.{" "}
+        </p>
+        <p>
+          #3 <b>Render a default page from your application code</b>: If you are
+          building a dynamic website using a server-side language like PHP, you
+          can use your application code to detect when a user has requested a
+          non-existent page and render a default page instead.
+        </p>
+        <p>
+          #4 <b>Use a catch-all route</b>: If you are using a framework like
+          Ruby on Rails or Django, you can set up a catch-all route that will
+          match any URL that doesn't match any other routes in your application.
+          This allows you to handle requests for non-existent pages by rendering
+          a default page or redirecting to a different URL.{" "}
+        </p>
       </div>
       <div className="Box">
         <h1>How to get history on React Router v4?</h1>
