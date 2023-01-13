@@ -72,6 +72,15 @@ import Image71 from "./Images/71.png";
 import Image72 from "./Images/72.png";
 import Image73 from "./Images/73.png";
 import Image74 from "./Images/74.png";
+import Image75 from "./Images/75.png";
+import Image76 from "./Images/76.png";
+import Image77 from "./Images/77.png";
+import Image78 from "./Images/78.png";
+import Image79 from "./Images/79.png";
+import Image80 from "./Images/80.png";
+import Image81 from "./Images/81.png";
+import Image82 from "./Images/82.png";
+import Image83 from "./Images/83.png";
 
 const App = () => {
   const [open, setOpen] = useState({});
@@ -2711,69 +2720,332 @@ const App = () => {
       </div>
       <div className="Box">
         <h1>How to get history on React Router v4?</h1>
-        <p></p>
+        <p>
+          In React Router v4, the <b>history</b> object is no longer included in
+          the <b>Router</b> component like it was in previous versions. Instead,
+          it is now possible to create your own history object and pass it as a
+          prop to the <b>Router</b> component.
+        </p>
+        <img src={Image75} alt="" />
       </div>
       <div className="Box">
         <h1>How to perform automatic redirect after login?</h1>
-        <p></p>
+        <p>
+          In a React application, you can perform an automatic redirect after a
+          successful login using the <b>useEffect</b> hook to check the login
+          status on the page load, and then redirect the user to the desired
+          page using the <b>useHistory</b> hook from the react-router-dom
+          library. Here is an example of how you might do this:
+        </p>
+        <img src={Image76} alt="" />
       </div>
       <div className="Box">
         <h1>What is React Intl?</h1>
-        <p></p>
+        <p>
+          React Intl is a library for internationalization (i18n) and
+          localization (l10n) in React applications. It provides a set of
+          components and APIs for formatting and handling translations of text
+          and other data in a React application.
+        </p>
+        <p>
+          React Intl provides a set of higher-order components and hooks that
+          wrap your components and automatically format and translate text,
+          numbers, dates, and other data. It also provides an API for managing
+          translations, including support for pluralization, gender, and
+          relative time.
+        </p>
+        <p>
+          One of the core features of React Intl is the <b>FormattedMessage</b>{" "}
+          component, which allows you to specify a message ID and a set of
+          placeholders for replacement values. The message ID is used to look up
+          the translated message, and the placeholders are replaced with the
+          corresponding values.
+        </p>
+        <p>
+          React Intl also provides a <b>FormattedNumber</b> component for
+          formatting numbers, a <b>FormattedDate</b> component for formatting
+          dates, and a <b>FormattedTime</b> component for formatting times.
+        </p>
+        <p>
+          React Intl also provides a <b>IntlProvider</b> component that makes it
+          easy to set the current locale and provide translations for your
+          application.
+        </p>
       </div>
       <div className="Box">
         <h1>What are the main features of React Intl?</h1>
-        <p></p>
+        <p>
+          #1 Formatting components: React Intl provides a set of higher-order
+          components and hooks for formatting text, numbers, dates, and other
+          data. These components automatically format and translate text based
+          on the current locale.
+        </p>
+        <p>
+          #2 Translation management: React Intl provides an API for managing
+          translations, including support for pluralization, gender, and
+          relative time. It allows you to specify a message ID and a set of
+          placeholders for replacement values.
+        </p>
+        <p>
+          #3 Pluralization: React Intl provides support for pluralization, which
+          allows you to handle different forms of a word or phrase depending on
+          the quantity of a number.
+        </p>
+        <p>
+          #4 Gender: React Intl provides support for gender-specific
+          translations, which allows you to handle different forms of a word or
+          phrase depending on the gender of a person.
+        </p>
+        <p>
+          #5 Relative time: React Intl provides support for formatting relative
+          time, which allows you to display time in a human-readable format,
+          such as "5 minutes ago" or "in 3 days".
+        </p>
+        <p>
+          #6 Custom formatters: React Intl allows you to handle complex
+          localization needs by providing custom formatters, allowing you to
+          format and translate text in a way that suits your specific needs.
+        </p>
+        <p>
+          #7 IntlProvider: React Intl provides a <b>IntlProvider</b> component
+          that makes it easy to set the current locale and provide translations
+          for your application.
+        </p>
+        <p>
+          #8 Server-side rendering: React Intl supports server-side rendering,
+          so your app can be pre-rendered with the correct translations on the
+          server before being sent to the browser.
+        </p>
       </div>
       <div className="Box">
         <h1>What are the two ways of formatting in React Intl?</h1>
-        <p></p>
+        <p>
+          #1 Higher-Order Components (HOC): React Intl provides a set of
+          higher-order components and hooks that wrap your components and
+          automatically format and translate text, numbers, dates, and other
+          data based on the current locale. These components include{" "}
+          <b>FormattedMessage</b> , <b>FormattedMessage</b>,{" "}
+          <b>FormattedMessage</b>, and <b>FormattedMessage</b>.
+        </p>
+        <p>
+          #2 API: React Intl also provides an API for formatting data, which
+          allows you to format and translate text, numbers, dates, and other
+          data in a programmatic way. This API is exposed via the intl object,
+          which is passed as a prop to your components via the{" "}
+          <b>IntlProvider</b> component.
+        </p>
+        <p>
+          The most common way of formatting data is using the React Intl's HOC
+          as it makes it easy to format and translate text, numbers, dates, and
+          other data with minimal setup and configuration. The API is also
+          useful in situations where you need more control over the formatting
+          process, or you need to format and translate data in a more
+          programmatic way.
+        </p>
       </div>
       <div className="Box">
         <h1>
           How to use <b>FormattedMessage</b> as placeholder using React Intl?
         </h1>
-        <p></p>
+        <p>
+          You can use the <b>FormattedMessage</b> component as a placeholder in
+          another <b>FormattedMessage</b> component by passing it as a value for
+          a named parameter. Here's an example:
+        </p>
+        <img src={Image77} alt="" />
+        <p>
+          In this example, the <b>FormattedMessage</b> component with the id of
+          "greeting" is being rendered, which has a placeholder named name. The
+          value of this placeholder is being replaced by another{" "}
+          <b>FormattedMessage</b> component with the id of "userName".
+        </p>
+        <p>
+          It's important to notice that the nested <b>FormattedMessage</b>{" "}
+          component has its own id and defaultMessage properties, that will be
+          used to look for the correct translation.
+        </p>
+        <p>
+          You can also use variables as a placeholder, for example, if you have
+          a variable called userName, you can use it as a placeholder value like
+          this:
+        </p>
+        <img src={Image78} alt="" />
+        <p>
+          This way the value of the variable userName will be used as a value
+          for the placeholder in the translation message.
+        </p>
       </div>
       <div className="Box">
         <h1>How to access current locale with React Intl?</h1>
-        <p></p>
+        <p>
+          In order to access the current locale with React Intl, you can use the{" "}
+          <b>injectIntl</b> higher-order component (HOC) to inject the{" "}
+          <b>intl</b> object, which contains the current locale, into your
+          component's props. Here is an example of how to use the{" "}
+          <b>injectIntl</b> HOC:
+        </p>
+        <img src={Image79} alt="" />
       </div>
       <div className="Box">
         <h1>How to format date using React Intl?</h1>
-        <p></p>
+        <p>
+          In order to format a date using React Intl, you can use the{" "}
+          <b>formatDate</b> method of the intl object, which is passed to your
+          component via the <b>injectIntl</b> higher-order component (HOC). Here
+          is an example of how to use the <b>formatDate</b> method
+        </p>
+        <img src={Image80} alt="" />
+        <p>
+          In this example, <b>injectIntl</b> is used to wrap the{" "}
+          <b>MyComponent</b> component, and the <b>intl</b> object is passed to
+          the component via props. The <b>formatDate</b> method of the intl
+          object is then used to format the date passed as an argument. You can
+          also pass options to formatDate method like
+        </p>
+        <img src={Image81} alt="" />
       </div>
       <div className="Box">
         <h1>What is Shallow Renderer in React testing?</h1>
-        <p></p>
-      </div>
-      <div className="Box">
-        <h1>What is TestRenderer package in React?</h1>
-        <p></p>
-      </div>
-      <div className="Box">
-        <h1>What is the purpose of ReactTestUtils package?</h1>
-        <p></p>
+        <p>
+          Shallow renderer is a tool that allows you to test React components in
+          isolation by rendering only the component itself and not its children.
+          This can be useful in situations where you want to test the
+          component's behavior and interactions without testing the behavior of
+          its children.
+        </p>
+        <p>
+          Here's an example of how you can use the shallow renderer to test a
+          component:
+        </p>
+        <img src={Image82} alt="" />
+        <p>
+          In this example, a new instance of the ShallowRenderer is created, and
+          the MyComponent component is rendered using the render method. The{" "}
+          <b>getRenderOutput</b> method is then used to retrieve the rendered
+          component, which can be used to perform assertions and make sure that
+          the component is rendered correctly.
+        </p>
       </div>
       <div className="Box">
         <h1>What is Jest?</h1>
-        <p></p>
+        <p>
+          Jest is a popular JavaScript testing framework created by Facebook. It
+          is a complete and easy to set-up JavaScript testing solution that
+          works out of the box for any JavaScript project. It is widely used for
+          unit testing and integration testing of React and React Native
+          applications, but it can also be used to test any JavaScript code.
+        </p>
+        <p>
+          Jest provides a powerful and flexible testing environment that allows
+          you to write tests quickly and easily. It includes many features such
+          as:
+        </p>
+        <ul>
+          <li>Automatically finds and runs tests</li>
+          <li>Provides a consistent and easy-to-use testing interface</li>
+          <li>Built-in assertion library</li>
+          <li>Snapshot testing</li>
+          <li>Built-in code coverage reports</li>
+          <li>Built-in support for mocking and spying</li>
+          <li>Parallel test execution</li>
+          <li>Support for TypeScript</li>
+        </ul>
       </div>
       <div className="Box">
         <h1>What are the advantages of Jest over Jasmine?</h1>
-        <p></p>
+        <p>
+          Jest and Jasmine are both popular JavaScript testing frameworks, but
+          Jest has some advantages over Jasmine. Some of the main advantages of
+          Jest over Jasmine are:
+        </p>
+        <ul>
+          <li>
+            Jest is faster: Jest uses a more efficient algorithm for running
+            tests, which makes it faster than Jasmine.
+          </li>
+          <li>
+            Jest is more versatile: Jest is built with JavaScript in mind, it
+            has a lot of utilities out of the box such as support for snapshot
+            testing, and it works well with React and React Native. Jasmine, on
+            the other hand, is more focused on testing web applications.
+          </li>
+          <li>
+            Jest has better assertion library: Jest's assertion library has more
+            features and is more user-friendly than Jasmine's.
+          </li>
+          <li>
+            Jest's snapshot testing: allows you to capture the rendered output
+            of a component and use it as a reference for future test, if the
+            output changes unexpectedly, it will let you know.
+          </li>
+          <li>
+            Jest has a built-in code coverage reporter: Jest can generate code
+            coverage reports, which can be useful for understanding how much of
+            your code is being tested. Jasmine does not have this feature
+            built-in, but you can use third-party tools to get the same
+            functionality.
+          </li>
+        </ul>
+        <p>
+          In summary, Jest is a more modern, versatile, and fast testing
+          framework with a lot of out of the box functionality that allows for
+          easy testing of JavaScript code.
+        </p>
       </div>
       <div className="Box">
         <h1>Give a simple example of Jest test case</h1>
-        <p></p>
-      </div>
-      <div className="Box">
-        <h1>What is flux?</h1>
-        <p></p>
+        <p>
+          Here is a simple example of a Jest test case in a React component
+          called <b>MyComponent</b>:
+        </p>
+        <img src={Image83} alt="" />
+        <p>
+          In this example, the <b>test</b> function is used to create a test
+          case. The first argument is a string describing the test case, and the
+          second argument is a callback function that contains the actual test
+          logic.
+        </p>
       </div>
       <div className="Box">
         <h1>What is Redux?</h1>
-        <p></p>
+        <p>
+          Redux is a JavaScript library for managing the state of an
+          application. It is often used with React to build complex, large-scale
+          user interface applications. Redux is based on the principles of the
+          Flux architecture, but it provides a more robust and powerful approach
+          to state management.
+        </p>
+        <p>Redux has three main components:</p>
+        <ul>
+          <li>
+            Store: A single JavaScript object that contains the entire state of
+            the application. The store is the single source of truth for the
+            state of the application.
+          </li>
+          <li>
+            Actions: Represent the user's intent to change the data in the
+            application. An action is a plain JavaScript object that describes
+            the change.
+          </li>
+          <li>
+            Reducers: Functions that specify how the state of the application
+            should be updated in response to an action. They take in the current
+            state and an action, and return the new state.
+          </li>
+        </ul>
+        <p>
+          In Redux, the data flow is unidirectional, meaning that data flows in
+          a single direction through the application, from the action to the
+          store and then to the view.
+        </p>
+        <p>
+          One of the main benefits of Redux is that it makes it easy to reason
+          about the state of an application. The store is the single source of
+          truth, and the actions and reducers provide a clear and consistent way
+          to handle updates to the state. Additionally, Redux makes it easy to
+          implement features such as time-travel debugging and undo/redo
+          functionality.
+        </p>
       </div>
       <div className="Box">
         <h1>What are the core principles of Redux?</h1>
@@ -2919,51 +3191,144 @@ const App = () => {
       </div>
       <div className="Box">
         <h1>What is the difference between React Native and React?</h1>
-        <p></p>
-      </div>
-      <div className="Box">
-        <h1>How to test React Native apps?</h1>
-        <p></p>
-      </div>
-      <div className="Box">
-        <h1>How to do logging in React Native?</h1>
-        <p></p>
-      </div>
-      <div className="Box">
-        <h1>How to debug your React Native?</h1>
-        <p></p>
+        <p>
+          React and React Native are both libraries created by Facebook, but
+          they are used for different purposes.
+        </p>
+        <p>
+          React is a JavaScript library for building user interfaces on the web.
+          It allows developers to build reusable UI components and manage the
+          state of an application in a way that is efficient and easy to
+          understand. React uses a virtual DOM (Document Object Model) to
+          efficiently update the UI when the state of an application changes.
+        </p>
+        <p>
+          React Native, on the other hand, is a framework for building mobile
+          applications using React. It allows developers to use the same
+          concepts and components that they use when building web applications
+          with React, but it renders natively on iOS and Android platforms. With
+          React Native, developers can create mobile applications that have the
+          performance and look-and-feel of traditional, native mobile apps.
+        </p>
+        <p>
+          In summary, React is used for building web applications and React
+          Native is used for building mobile applications. Both use the same
+          concepts and components, but React Native provides additional features
+          and APIs to interact with the native capabilities of mobile devices.
+        </p>
       </div>
       <div className="Box">
         <h1>What is reselect and how it works?</h1>
-        <p></p>
+        <p>
+          Reselect is a small library for creating memoized, composable
+          selectors in JavaScript. It is commonly used in combination with Redux
+          to select and transform data from the store.
+        </p>
+        <p>
+          In summary, Reselect is a useful library for creating memoized,
+          composable selectors that allows to efficiently select and transform
+          data from the store. It can be used with any state management library,
+          but it is commonly used with Redux.
+        </p>
       </div>
       <div className="Box">
         <h1>What is Flow?</h1>
-        <p></p>
+        <p>
+          Flow is a programming language developed by Facebook for building user
+          interfaces. It is a static type checker that helps catch errors before
+          they run. Flow is built on top of JavaScript and is used to add type
+          annotations to JavaScript code. This allows developers to catch type
+          errors at development time, making the code more predictable and
+          easier to debug. Flow is often used in conjunction with React.
+        </p>
       </div>
       <div className="Box">
         <h1>What is the difference between Flow and PropTypes?</h1>
-        <p></p>
-      </div>
-      <div className="Box">
-        <h1>How to use Font Awesome icons in React?</h1>
-        <p></p>
-      </div>
-      <div className="Box">
-        <h1>What is React Dev Tools?</h1>
-        <p></p>
-      </div>
-      <div className="Box">
-        <h1>Why is DevTools not loading in Chrome for local files?</h1>
-        <p></p>
+        <p>
+          Flow and PropTypes are both tools that can be used to add type
+          checking to JavaScript code, but they have some key differences.
+        </p>
+        <p>
+          Flow is a static type checker that is built on top of JavaScript. It
+          works by adding type annotations to the code, which are then checked
+          at development time. Flow provides a more powerful type system than
+          JavaScript, and it can catch a wider range of errors before the code
+          runs.
+        </p>
+        <p>
+          PropTypes is a built-in feature of React, a JavaScript library for
+          building user interfaces. It works by specifying the expected types of
+          component props, and it checks that the props passed to the component
+          match those types at runtime. PropTypes is less powerful than Flow,
+          and it can only catch a subset of the errors that Flow can catch.
+        </p>
       </div>
       <div className="Box">
         <h1>How to use Polymer in React?</h1>
-        <p></p>
+        <p>
+          Polymer is a JavaScript library for building web components and can be
+          used in a React application. However, it's important to note that
+          React and Polymer are different libraries with different approaches to
+          building user interfaces. React uses a virtual DOM and a declarative
+          approach to building components, while Polymer uses web components and
+          a imperative approach.
+        </p>
+        <p>
+          It's also worth noting that Polymer is in a deprecation process, and
+          it's not recommended to use it in new projects.
+        </p>
       </div>
       <div className="Box">
         <h1>What are the advantages of React over Vue.js?</h1>
-        <p></p>
+        <p>
+          React and Vue.js are both popular JavaScript libraries for building
+          user interfaces, but they have some key differences in terms of
+          features and approach. Some advantages of React over Vue.js are:
+        </p>
+        <ul>
+          <li>
+            Large Community: React has been around for longer and has a larger
+            community, which means more resources, tutorials, and libraries
+            available. This can make it easier to find help or solutions to
+            problems.
+          </li>
+          <li>
+            Popularity: React is more popular among the large enterprises and
+            companies, this means that React has a large number of job
+            opportunities and a wide range of companies are using it.
+          </li>
+          <li>
+            Performance: React uses a virtual DOM, which can improve the
+            performance of large and complex applications by reducing the amount
+            of DOM manipulation.
+          </li>
+          <li>
+            Server-side rendering: React has built-in support for server-side
+            rendering, which can improve the initial loading time of an
+            application and make it more SEO-friendly.
+          </li>
+          <li>
+            JSX: React uses JSX, a syntax extension for JavaScript, which allows
+            you to write HTML-like elements directly in your JavaScript code,
+            making it easier to reason about the structure of your component.
+          </li>
+          <li>
+            Flexibility: React allows developers to use it in a variety of ways,
+            such as using it with other libraries, like redux for state
+            management, or using it with web components, this allows developers
+            to pick and choose the libraries that work best for their project.
+          </li>
+          <li>
+            Reusable Components: React encourages the use of reusable
+            components, which allows for a more modular and maintainable
+            codebase.
+          </li>
+          <li>
+            Testing: React has a great testing ecosystem and a lot of testing
+            libraries are available, like Jest, Enzyme, and others, which makes
+            it easy to test the application and its components.
+          </li>
+        </ul>
       </div>
       <div className="Box">
         <h1>What is the difference between React and Angular?</h1>
