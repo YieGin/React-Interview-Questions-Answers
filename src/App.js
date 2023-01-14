@@ -81,6 +81,21 @@ import Image80 from "./Images/80.png";
 import Image81 from "./Images/81.png";
 import Image82 from "./Images/82.png";
 import Image83 from "./Images/83.png";
+import Image84 from "./Images/84.png";
+import Image85 from "./Images/85.png";
+import Image86 from "./Images/86.png";
+import Image87 from "./Images/87.png";
+import Image88 from "./Images/88.png";
+import Image89 from "./Images/89.png";
+import Image90 from "./Images/90.png";
+import Image91 from "./Images/91.png";
+import Image92 from "./Images/92.png";
+import Image93 from "./Images/93.png";
+import Image94 from "./Images/94.png";
+import Image95 from "./Images/95.png";
+import Image96 from "./Images/96.png";
+import Image97 from "./Images/97.png";
+import Image98 from "./Images/98.png";
 
 const App = () => {
   const [open, setOpen] = useState({});
@@ -2310,9 +2325,23 @@ const App = () => {
           to use a relative path.
         </p>
         <p>For example, instead of using a relative path import like this:</p>
-        <img src={Image58} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image58}
+          alt=""
+        />
         <p>You can use the src alias like this:</p>
-        <img src={Image59} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image59}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>How to add Google Analytics for React Router?</h1>
@@ -2325,7 +2354,14 @@ const App = () => {
           function in JavaScript. Here is an example of how you can use{" "}
           <b>setInterval</b> to update a component every second:
         </p>
-        <img src={Image60} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image60}
+          alt=""
+        />
         <p>
           The <b>useEffect</b> hook is used to set up the interval, and the{" "}
           <b>clearInterval</b> function is used to clear the interval when the
@@ -2342,7 +2378,14 @@ const App = () => {
           needed.
         </p>
         <p>For example:</p>
-        <img src={Image61} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image61}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>How to import and export components using React and ES6?</h1>
@@ -2350,7 +2393,14 @@ const App = () => {
           To import a component in React using ES6, you can use the{" "}
           <b>"import"</b> statement. Here's an example:
         </p>
-        <img src={Image62} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image62}
+          alt=""
+        />
         <p>
           In this example, the <b>import</b> statement is used to import the{" "}
           <b>React</b> library, as well as a custom component called{" "}
@@ -2361,7 +2411,14 @@ const App = () => {
           To export a component in React using ES6, you can use the{" "}
           <b>"export"</b> statement. Here's an example of how you might do this:
         </p>
-        <img src={Image63} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image63}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>Why is a component constructor called only once?</h1>
@@ -2391,13 +2448,27 @@ const App = () => {
           Using the <b>const</b> keyword: You can define a constant using the{" "}
           <b>const</b> keyword, like this:
         </p>
-        <img src={Image64} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image64}
+          alt=""
+        />
         <p>
           Using the <b>static</b> keyword: If you are defining a constant within
           a class, you can use the <b>static</b> keyword to define a class-level
           constant. For example:
         </p>
-        <img src={Image65} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image65}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>How to programmatically trigger click event in React?</h1>
@@ -2405,7 +2476,14 @@ const App = () => {
           you can use the <b>onClick</b> event handler and call the <b>click</b>{" "}
           method on the element that you want to trigger the click event for.
         </p>
-        <img src={Image66} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image66}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>Is it possible to use async/await in plain React?</h1>
@@ -2419,7 +2497,14 @@ const App = () => {
           Here's an example of how you can use <b>async/await</b> in a React
           component:
         </p>
-        <img src={Image67} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image67}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>What are the common folder structures for React?</h1>
@@ -2485,12 +2570,26 @@ const App = () => {
         <p>
           Here is an example of a styles module in a project using CSS Modules:
         </p>
-        <img src={Image68} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image68}
+          alt=""
+        />
         <p>
           To use the styles in this module, you would import them into your
           component file like this:
         </p>
-        <img src={Image69} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image69}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>What are the popular React-specific linters?</h1>
@@ -2530,7 +2629,14 @@ const App = () => {
           To make an AJAX call in a React application, you can use the{" "}
           <b>axios</b>{" "}
         </p>
-        <img src={Image67} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image67}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>What are render props?</h1>
@@ -2541,12 +2647,26 @@ const App = () => {
           something.
         </p>
         <p>Here is an example of a component using a render prop:</p>
-        <img src={Image70} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image70}
+          alt=""
+        />
         <p>
           To use this component, you would pass a function as the <b>render</b>{" "}
           prop when you render the <b>MyComponent</b> element:
         </p>
-        <img src={Image71} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image71}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>What is React Router?</h1>
@@ -2644,7 +2764,14 @@ const App = () => {
           n React Router v4, you can use the <b>match</b> object that is passed
           to your component props to get the query parameters.
         </p>
-        <img src={Image72} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image72}
+          alt=""
+        />
         <p>
           In this example, <b>MyComponent</b> is a component that is being
           rendered by a <b>Route</b> component from the <b>react-router-dom</b>{" "}
@@ -2676,12 +2803,26 @@ const App = () => {
           For example, the following code would trigger the "Router may have
           only one child element" warning:
         </p>
-        <img src={Image73} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image73}
+          alt=""
+        />
         <p>
           To fix this code, you could wrap the two <b>div</b> elements in a{" "}
           <b>Switch</b> like this:
         </p>
-        <img src={Image74} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image74}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>How to implement default or NotFound page?</h1>
@@ -2726,7 +2867,14 @@ const App = () => {
           it is now possible to create your own history object and pass it as a
           prop to the <b>Router</b> component.
         </p>
-        <img src={Image75} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image75}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>How to perform automatic redirect after login?</h1>
@@ -2737,7 +2885,14 @@ const App = () => {
           page using the <b>useHistory</b> hook from the react-router-dom
           library. Here is an example of how you might do this:
         </p>
-        <img src={Image76} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image76}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>What is React Intl?</h1>
@@ -2852,7 +3007,14 @@ const App = () => {
           another <b>FormattedMessage</b> component by passing it as a value for
           a named parameter. Here's an example:
         </p>
-        <img src={Image77} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image77}
+          alt=""
+        />
         <p>
           In this example, the <b>FormattedMessage</b> component with the id of
           "greeting" is being rendered, which has a placeholder named name. The
@@ -2869,7 +3031,14 @@ const App = () => {
           a variable called userName, you can use it as a placeholder value like
           this:
         </p>
-        <img src={Image78} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image78}
+          alt=""
+        />
         <p>
           This way the value of the variable userName will be used as a value
           for the placeholder in the translation message.
@@ -2884,7 +3053,14 @@ const App = () => {
           component's props. Here is an example of how to use the{" "}
           <b>injectIntl</b> HOC:
         </p>
-        <img src={Image79} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image79}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>How to format date using React Intl?</h1>
@@ -2894,7 +3070,14 @@ const App = () => {
           component via the <b>injectIntl</b> higher-order component (HOC). Here
           is an example of how to use the <b>formatDate</b> method
         </p>
-        <img src={Image80} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image80}
+          alt=""
+        />
         <p>
           In this example, <b>injectIntl</b> is used to wrap the{" "}
           <b>MyComponent</b> component, and the <b>intl</b> object is passed to
@@ -2902,7 +3085,14 @@ const App = () => {
           object is then used to format the date passed as an argument. You can
           also pass options to formatDate method like
         </p>
-        <img src={Image81} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image81}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>What is Shallow Renderer in React testing?</h1>
@@ -2917,7 +3107,14 @@ const App = () => {
           Here's an example of how you can use the shallow renderer to test a
           component:
         </p>
-        <img src={Image82} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image82}
+          alt=""
+        />
         <p>
           In this example, a new instance of the ShallowRenderer is created, and
           the MyComponent component is rendered using the render method. The{" "}
@@ -2998,7 +3195,14 @@ const App = () => {
           Here is a simple example of a Jest test case in a React component
           called <b>MyComponent</b>:
         </p>
-        <img src={Image83} alt="" />
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image83}
+          alt=""
+        />
         <p>
           In this example, the <b>test</b> function is used to create a test
           case. The first argument is a string describing the test case, and the
@@ -3332,128 +3536,796 @@ const App = () => {
       </div>
       <div className="Box">
         <h1>What is the difference between React and Angular?</h1>
-        <p></p>
+        <p>
+          React and Angular are both JavaScript libraries for building user
+          interfaces. However, they have some key differences in terms of their
+          design and usage.
+        </p>
+        <p>
+          React, developed by Facebook, is a library for building reusable UI
+          components. It uses a virtual DOM (Document Object Model) to improve
+          performance by limiting the amount of DOM manipulation required. React
+          focuses on the component-based structure of an application, making it
+          easy to build and maintain large-scale applications.
+        </p>
+        <p>
+          Angular, developed by Google, is a full-featured framework for
+          building web applications. It includes a powerful template language
+          and a set of built-in directives for building dynamic UI. Angular uses
+          a two-way data binding mechanism, which automatically synchronizes the
+          data between the model and the view. Angular is more opinionated than
+          React, meaning that it provides a set of conventions and patterns for
+          structuring and building applications.
+        </p>
+        <p>
+          In summary, React is a library for building UI components, while
+          Angular is a full-featured framework for building web applications.
+          React is more flexible and can be integrated with other libraries or
+          frameworks, while Angular has a more opinionated structure.
+        </p>
       </div>
       <div className="Box">
         <h1>Why React tab is not showing up in DevTools?</h1>
-        <p></p>
+        <p>
+          There are a few reasons why the React tab may not be showing up in
+          DevTools:
+        </p>
+        <p>
+          #1 <b>React Developer Tools is not installed</b>: Make sure that you
+          have the React Developer Tools browser extension installed. You can
+          find it in the Chrome Web Store or the Firefox Add-ons Marketplace.
+        </p>
+        <p>
+          #2 <b>React is not being used in the current page</b>: The React
+          Developer Tools extension only works on pages that are using React. If
+          the current page does not have React, the React tab will not appear.
+        </p>
+        <p>
+          #3 <b>React is being used in production mode</b>: The React Developer
+          Tools extension only works with development builds of React. If the
+          page is using a production build, the React tab will not appear.
+        </p>
+        <p>
+          #4 <b>Incorrect version of React Developer Tools</b>: Make sure you
+          have the latest version of React Developer Tools and that it is
+          compatible with the version of React that you are using.
+        </p>
+        <p>
+          #5 <b>Incorrectly imported React</b>: If React is imported in a way
+          that is not compatible with the React Developer Tools, the tab may not
+          show up. Make sure you are importing React correctly.{" "}
+        </p>
+        <p>
+          #6 <b>The DevTools are not open</b>: Make sure that you have the
+          DevTools open in your browser while you are on the page that is using
+          React.{" "}
+        </p>
+        <p>
+          If none of the above solutions work, you may want to try disabling any
+          browser extensions that could be interfering with the React Developer
+          Tools and then restarting your browser.
+        </p>
       </div>
       <div className="Box">
         <h1>What are Styled Components?</h1>
-        <p></p>
+        <p>
+          Styled Components are a way to create and manage CSS styles in a React
+          application. They allow you to write CSS styles in JavaScript and
+          apply them directly to your components. This approach can help to
+          improve the modularity and reusability of your styles, making it
+          easier to maintain and scale your application.
+        </p>
       </div>
       <div className="Box">
         <h1>Give an example of Styled Components?</h1>
-        <p></p>
+        <p>
+          Here is an example of how you can use Styled Components to create a
+          reusable button component in a React application:
+        </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image84}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>What is Relay?</h1>
-        <p></p>
+        <p>
+          Relay is a JavaScript framework developed by Facebook for building
+          data-driven React applications. It is used to efficiently manage the
+          data required by a React application and handle the communication with
+          the server.
+        </p>
+        <p>
+          One of the main advantages of Relay is that it allows you to
+          declaratively specify the data requirements of your components, which
+          makes it easier to reason about the data flow in your application. It
+          also helps to avoid common problems such as over-fetching or
+          under-fetching of data, and makes it easier to add new features or
+          make changes to the data without affecting the rest of the
+          application.
+        </p>
       </div>
       <div className="Box">
         <h1>How to use TypeScript in create-react-app application?</h1>
-        <p></p>
+        <p>
+          you can convert an existing create-react-app application to TypeScript
+          by using the react-scripts-ts package, which is an alternative set of
+          scripts for building React applications with TypeScript.
+        </p>
+        <p>You can install it by running the following command:</p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image85}
+          alt=""
+        />
+        <p>
+          Then you can replace the <b>react-scripts</b> package in your
+          package.json file with <b>react-scripts-ts</b>.
+        </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image86}
+          alt=""
+        />
+        <p>
+          You should also rename your .js files to .tsx files and also you may
+          need to update the file imports and types in your codebase
+          accordingly.
+        </p>
       </div>
       <div className="Box">
         <h1>What are the main features of Reselect library?</h1>
-        <p></p>
-      </div>
-      <div className="Box">
-        <h1>Give an example of Reselect usage?</h1>
-        <p></p>
+        <p>
+          Reselect is a library for creating efficient and composable
+          "selectors" in a Redux-based application. Some of the main features of
+          Reselect include:
+        </p>
+        <p>
+          #1 <b>Memoization</b>: Selectors are automatically memoized, which
+          means that their results are cached and only recalculated when their
+          input data (also known as "dependencies") changes. This can greatly
+          improve the performance of an application by reducing the number of
+          unnecessary re-renders.{" "}
+        </p>
+        <p>
+          #2 <b>Composability</b>: Selectors can be composed together to create
+          more complex selectors, allowing for modular and reusable code.{" "}
+        </p>
+        <p>
+          #3 <b>Input selectors</b>: Selectors can be defined to extract
+          specific pieces of data from the Redux store, making it easy to access
+          the data needed for a particular component or action.
+        </p>
+        <p>
+          #4 <b>Performance optimization</b>: Reselect provides a way to
+          optimize the performance of your selectors, as well as providing a way
+          to check the performance of your selectors.{" "}
+        </p>
       </div>
       <div className="Box">
         <h1>Does the statics object work with ES6 classes in React?</h1>
-        <p></p>
+        <p>
+          In React, the <b>statics</b> object can be used to define{" "}
+          <b>static</b> methods and properties on a component class. However,
+          the statics object is not supported in ES6 classes by default.
+          Instead, you would need to use the <b>Object.assign()</b> method or
+          the <b>class properties</b> proposal to define static methods and
+          properties on an ES6 class.
+        </p>
       </div>
       <div className="Box">
         <h1>Can Redux only be used with React?</h1>
-        <p></p>
+        <p>
+          No, Redux can be used with any JavaScript framework or library, not
+          just React. It is a standalone library that can be used to manage the
+          state of your application in a predictable way. It is often used in
+          conjunction with React, but it is not limited to it.
+        </p>
       </div>
       <div className="Box">
         <h1>Do you need to have a particular build tool to use Redux?</h1>
-        <p></p>
-      </div>
-      <div className="Box">
-        <h1>How Redux Form initialValues get updated from state?</h1>
-        <p></p>
-      </div>
-      <div className="Box">
-        <h1>How React PropTypes allow different types for one prop?</h1>
-        <p></p>
+        <p>
+          No, you do not need to have a particular build tool to use Redux.
+          Redux can be added to your project by installing it via npm or yarn
+          and importing it into your JavaScript file.{" "}
+        </p>
       </div>
       <div className="Box">
         <h1>Can I import an SVG file as react component?</h1>
-        <p></p>
+        <p>
+          Yes, you can import an SVG file as a React component. One way to do
+          this is to use the <b>import</b> statement to import the SVG file, and
+          then use the JSX <b>img</b> or <b>svg</b> element to include it in
+          your component's render method.
+        </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image87}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>Why are inline ref callbacks or functions not recommended?</h1>
+        <p>
+          Inline ref callbacks or functions (i.e., passing a function directly
+          as the ref prop) are not recommended for a few reasons:
+        </p>
+        <p>
+          #1 They can cause unnecessary re-renders of the component when the ref
+          callback is invoked, which can negatively impact performance.
+        </p>
+        <p>
+          #2 They can make the code harder to read and understand, as the ref
+          callback is defined inline rather than in a separate method or
+          variable.
+        </p>
+        <p>
+          #3 They may be less flexible, as they can only be used to create a
+          single ref per component instance.
+        </p>
         <p></p>
       </div>
       <div className="Box">
         <h1>What is render hijacking in react?</h1>
-        <p></p>
+        <p>
+          In React, "render hijacking" refers to the practice of overriding the
+          built-in render method of a component in order to change its behavior.
+          This is considered an anti-pattern because it can make the code harder
+          to understand and maintain.
+        </p>
+        <p>
+          It is generally recommended to use other React features, such as
+          props, state, and hooks, to control the behavior of a component. This
+          makes the code more predictable and easier to understand.
+        </p>
       </div>
       <div className="Box">
         <h1>What are HOC factory implementations?</h1>
-        <p></p>
+        <p>
+          A Higher-Order Component (HOC) is a function that takes a component as
+          an argument and returns a new component that wraps the original one.
+          HOCs are a powerful pattern in React that allows you to reuse
+          component logic and add additional functionality to a compone
+        </p>
+        <p>
+          HOC factory implementations are a variation of HOCs that allow you to
+          pass in some arguments or options to the HOC factory function, which
+          will then use them to configure the HOC before it returns it.
+        </p>
+        <p>Here's an example of how a HOC factory might be implemented:</p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image88}
+          alt=""
+        />
+        <p>
+          In this example, the <b>withAuth</b> function is an HOC factory that
+          takes two arguments: a <b>WrappedComponent</b> and an <b>authType</b>.
+          The withAuth function returns a new component that wraps the
+          WrappedComponent and adds an <b>isAdmin</b> prop to it, depending on
+          the value of <b>authType</b>.
+        </p>
+        <p>
+          HOC factory implementation can be useful in situations where the HOC
+          behavior needs to be configurable, or where you want to reuse HOC code
+          for different components with different configurations. This can help
+          you to avoid code duplication and keep your code more organized and
+          maintainable.
+        </p>
       </div>
       <div className="Box">
         <h1>How to pass numbers to React component?</h1>
-        <p></p>
+        <p>
+          In React, you can pass numbers as props to a component just like you
+          would pass any other type of data.
+        </p>
+        <p>
+          Here's an example of how you might pass a number as a prop to a
+          component:
+        </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image89}
+          alt=""
+        />
+        <p>
+          In this example, the number 25 is being passed as a prop called age to
+          the MyComponent component.
+        </p>
+        <p>You can also pass numbers as a variable like this:</p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image90}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>
           Do I need to keep all my state into Redux? Should I ever use react
           internal state?
         </h1>
-        <p></p>
+        <p>
+          It is not necessary to keep all state in Redux, and it may not always
+          be the best approach. While Redux is a powerful tool for managing
+          application-wide state, it is not always the best fit for every use
+          case.
+        </p>
+        <p>
+          React's internal state can be used for local state that is specific to
+          a single component and does not need to be shared with other
+          components. This can include things like form input values, toggle
+          states, and other small pieces of data that are only used within the
+          component.
+        </p>
+        <p>
+          When deciding whether to use React's internal state or Redux, it's
+          important to consider the scope of the state and how it will be used.
+          If the state is only used within a single component and does not need
+          to be shared with other components, then React's internal state is
+          likely the better choice. On the other hand, if the state is needed by
+          multiple components or needs to be shared across different parts of
+          the application, then using Redux may be more appropriate.
+        </p>
+        <p>
+          In general, it's a good practice to start with React's internal state
+          and evaluate if it's necessary to move the state to a global store
+          like Redux, as the complexity of the application increases.
+        </p>
       </div>
       <div className="Box">
         <h1>What is the purpose of registerServiceWorker in React?</h1>
-        <p></p>
+        <p>
+          In a React application, the <b>registerServiceWorker</b> function is
+          used to register a service worker. A service worker is a script that
+          runs in the background of a web page and can be used to improve the
+          performance and offline capabilities of a React application.
+        </p>
+        <p>
+          When a service worker is registered, it can handle network requests,
+          cache assets, and provide offline functionality to the application.
+          This can improve the load time of the application, as assets can be
+          served from the cache instead of the network, and the application can
+          continue to work even when there is no internet connection.
+        </p>
+        <p>
+          The <b>registerServiceWorker</b> function is typically called in the{" "}
+          <b>index.js</b> file of a React application. It is usually imported
+          from a separate file called <b>registerServiceWorker.js</b> which is
+          generated by Create React App (CRA) or other tooling that uses service
+          worker.
+        </p>
+        <p>
+          Here's an example of how the <b>registerServiceWorker</b> function
+          might be used in a React application:
+        </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image91}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>What is React memo function?</h1>
-        <p></p>
+        <p>
+          {" "}
+          <b>React.memo</b> is a higher-order component (HOC) that is used to
+          optimize the performance of functional components in React. It is used
+          to <b>"memoize"</b> a component, which means that it will only
+          re-render the component if its props have changed.
+        </p>
+        <p>
+          By default, React will re-render a component whenever its parent
+          component re-renders, even if the props have not changed. This can
+          cause unnecessary re-renders and negatively impact performance,
+          especially in large or complex applications.
+        </p>
+        <p>
+          The <b>React.memo</b> function takes a functional component as an
+          argument and returns a new component that is "memoized" (i.e.,
+          optimized for performance). The new component will only re-render if
+          its props have changed, which can significantly improve the
+          performance of the application.
+        </p>
+        <p>
+          Here's an example of how you might use <b>React.memo</b> to optimize a
+          functional component:
+        </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image92}
+          alt=""
+        />
+        <p>
+          In this example, the <b>MyComponent</b> component is wrapped in a call
+          to <b>React.memo</b>, which will prevent it from re-rendering unless
+          its <b>name</b> or <b>age</b> props have changed.
+        </p>
+        <p>
+          It's worth noting that <b>React.memo</b> only works with functional
+          components, if you are working with class components, you can use{" "}
+          <b>React.PureComponent</b> instead, which implements a shallow
+          comparison of the props and state, so it will only re-render if the
+          props or state have changed.
+        </p>
       </div>
       <div className="Box">
         <h1>What is React lazy function?</h1>
-        <p></p>
+        <p>
+          React.lazy is a function that allows you to load a component lazily,
+          i.e, only when it is needed. This can improve the performance of your
+          application by preventing unnecessary code from being loaded at the
+          initial render. It works in conjunction with the Suspense component,
+          which allows you to add a fallback while the lazy component is being
+          loaded.
+        </p>
       </div>
       <div className="Box">
         <h1>How to prevent unnecessary updates using setState?</h1>
-        <p></p>
+        <p>
+          In order to prevent unnecessary updates when using <b>setState</b> in
+          React, you can use the <b>shouldComponentUpdate</b> lifecycle method.
+          This method allows you to compare the current props and state to the
+          next props and state that will be received, and return <b>false</b> if
+          the component does not need to re-render. Additionally, you can use
+          the <b>React.memo</b> higher order component or the <b>useMemo</b>{" "}
+          hook to memoize the component and prevent unnecessary re-renders.
+        </p>
       </div>
       <div className="Box">
         <h1>
           How do you render Array, Strings and Numbers in React 16 Version?
         </h1>
-        <p></p>
+        <p>
+          In React 16, you can render arrays, strings, and numbers using the{" "}
+          <b>map</b> method, the <b>join</b> method, and the <b>{}</b> curly
+          braces, respectively.
+        </p>
+        <p>
+          To render an array of elements, you can use the <b>map</b> method to
+          iterate over the array and return a new array of JSX elements. For
+          example:
+        </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image93}
+          alt=""
+        />
+        <p>
+          To render a string, you can simply use the curly braces <b>{}</b> to
+          enclose the string. For example:
+        </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image94}
+          alt=""
+        />
+        <p>
+          To render a number, you can also use the curly braces <b>{}</b> to
+          enclose the number. For example:
+        </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image95}
+          alt=""
+        />
       </div>
       <div className="Box">
         <h1>How to use class field declarations syntax in React classes?</h1>
-        <p></p>
+        <p>
+          In React, you can use class field declarations syntax to declare class
+          fields and methods in a class-based component. This syntax allows you
+          to define class fields and methods directly in the class body without
+          the need to use a constructor.
+        </p>
+        <p>
+          Here is an example of how you can use class field declarations syntax
+          to declare a state field and a method in a class-based component:
+        </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image96}
+          alt=""
+        />
+        <p>
+          In this example, <b>state</b> is a class field that is initialized
+          with an object containing the <b>count</b> field, and{" "}
+          <b>handleClick</b> is a class method that updates the <b>count</b>{" "}
+          field in the state.
+        </p>
+        <p>
+          Please note that class field declarations syntax is not supported in
+          all environments, so you may need to use a transpiler like Babel to
+          transpile the code if you are not using a recent version of
+          JavaScript.
+        </p>
       </div>
       <div className="Box">
         <h1>What are hooks?</h1>
-        <p></p>
+        <p>
+          Hooks are a new feature in React that allows you to use state and
+          other React features in functional components, rather than just in
+          class-based components.
+        </p>
+        <p>There are two main types of hooks:</p>
+        <p>
+          #1 State hooks: <b>useState</b> is the basic hook for state management
+          in a functional component. It allows you to add state to your
+          functional component, and update it with <b>setState</b> -like
+          functions.
+        </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image97}
+          alt=""
+        />
+        <p>
+          #2 Effect hooks: <b>useEffect</b> is the basic hook for side effects
+          management in a functional component. It allows you to synchronize a
+          component with an external system, and handle lifecycle events such as
+          componentDidMount and componentDidUpdate.
+        </p>
+        <img
+          onClick={() => {
+            setOpen(!open);
+          }}
+          className={open ? "Image" : "Image_Open"}
+          src={Image98}
+          alt=""
+        />
+        <p>
+          There are many other hooks like <b>useContext</b> , <b>useReducer</b>{" "}
+          , <b>useCallback</b> , <b>useMemo</b> , etc.
+        </p>
+        <p>
+          Hooks provide a way to use state and other React features in
+          functional components, making your code more readable and
+          maintainable. They also make it easier to share logic between
+          components, and to test components in isolation.
+        </p>
+        <p>
+          You can use hooks by calling the hook functions in your functional
+          components, and providing the necessary arguments to the hook. It is
+          important to note that hooks can only be called at the top level of
+          your component and not inside loops, conditions or nested function.
+        </p>
       </div>
       <div className="Box">
         <h1>What rules need to be followed for hooks?</h1>
-        <p></p>
+        <p>
+          In general, hooks in React are used to allow functional components to
+          have access to state and lifecycle methods. Some rules that need to be
+          followed when using hooks include:
+        </p>
+        <ul>
+          <li>
+            {" "}
+            <b>Only call hooks at the top level</b>: Hooks should only be called
+            at the top level of your component or custom hook, not inside loops
+            or conditions.
+          </li>
+          <li>
+            {" "}
+            <b>Only call hooks from React functions</b>: Hooks should only be
+            called from React functional components or other custom hooks.{" "}
+          </li>
+          <li>
+            {" "}
+            <b>Follow the order of hooks</b>: Hooks should be called in the same
+            order in every component where they are used, to avoid
+            inconsistencies in the component's state.{" "}
+          </li>
+          <li>
+            {" "}
+            <b>Avoid using stateful logic in loops</b>: Instead of using
+            stateful logic in loops, use the useState or useReducer hooks to
+            manage state.{" "}
+          </li>
+          <li>
+            {" "}
+            <b>Avoid using useEffect to create a new state variable</b>: Instead
+            of creating a new state variable in useEffect, use useState or
+            useReducer to manage state.{" "}
+          </li>
+        </ul>
       </div>
       <div className="Box">
         <h1>How to ensure hooks followed the rules in your project?</h1>
-        <p></p>
+        <p>
+          There are several ways to ensure that hooks are being used correctly
+          in a React project:
+        </p>
+        <ul>
+          <li>
+            {" "}
+            <b>Use linting</b>: Use a linter like ESLint with the
+            eslint-plugin-react-hooks plugin to catch potential issues with
+            hooks. This can help enforce the rules around hooks, such as only
+            calling hooks at the top level and only calling hooks from React
+            functions.{" "}
+          </li>
+          <li>
+            {" "}
+            <b>Use a testing framework</b>: Use a testing framework like Jest
+            and Enzyme to test your components and ensure that they are using
+            hooks correctly. This can help catch issues like calling hooks in
+            the wrong order or using stateful logic in loops.{" "}
+          </li>
+          <li>
+            {" "}
+            <b>Code review</b>: Use code review to ensure that other developers
+            in your team are following the rules around hooks. This can help
+            catch issues that may not be caught by linting or testing.{" "}
+          </li>
+          <li>
+            {" "}
+            <b>Use type checking</b>: Use a type checker like TypeScript to
+            catch issues with hooks. This can help catch issues like passing the
+            wrong types of data to hooks and using hooks in the wrong context.{" "}
+          </li>
+          <li>
+            {" "}
+            <b>Use development tools</b>: Use development tools like React
+            DevTools to debug your application and ensure that your hooks are
+            working as expected.{" "}
+          </li>
+        </ul>
+        <p>
+          By following these steps, you can ensure that hooks are being used
+          correctly in your project and avoid potential issues that may arise
+          from improper use.
+        </p>
       </div>
       <div className="Box">
         <h1>What are the differences between Flux and Redux?</h1>
-        <p></p>
+        <p>
+          Flux and Redux are both architectures for managing the state of a
+          JavaScript application, but they have some key differences:
+        </p>
+        <ul>
+          <li>
+            <b>Flux</b> is a design pattern, whereas <b>Redux</b> is a library:{" "}
+            <b>Flux</b> is a pattern for managing application state and actions,
+            whereas <b>Redux</b> is a library that implements the <b>Flux</b>{" "}
+            pattern.
+          </li>
+          <li>
+            <b>Flux</b> has multiple stores, whereas <b>Redux</b> has a single
+            store: In <b>Flux</b>, the application state is split into multiple
+            stores, each responsible for a specific domain. In contrast,{" "}
+            <b>Redux</b> uses a single store to manage the entire application
+            state.{" "}
+          </li>
+          <li>
+            <b>Flux</b> has a central dispatcher, whereas <b>Redux</b> uses
+            reducers: In <b>Flux</b>, a central dispatcher is used to handle all
+            actions and update the stores. In <b>Redux</b>, the state updates
+            are handled by pure functions called reducers.
+          </li>
+          <li>
+            <b>Flux</b> allows for many-to-many relationships between stores,
+            while <b>Redux</b> follows one-way data flow: In <b>Flux</b>, stores
+            can listen to other stores and respond to their changes, while in{" "}
+            <b>Redux</b>, state changes are triggered by actions and are handled
+            by reducers.
+          </li>
+          <li>
+            <b>Redux</b> provides a way to handle middleware and async actions:{" "}
+            <b>Redux</b> provides a way to handle middleware and async actions
+            using middleware libraries like <b>Redux</b>-thunk and <b>Redux</b>
+            -saga which enables for easier handling of async actions and side
+            effects.
+          </li>
+        </ul>
+        <p>
+          Both Flux and Redux are designed to make it easier to manage the state
+          of a JavaScript application, but they have different approaches and
+          trade-offs. Redux is more popular because it is easier to learn and
+          use, and it has better performance and developer tools.
+        </p>
       </div>
       <div className="Box">
         <h1>What are the benefits of React Router V4?</h1>
-        <p></p>
+        <p>
+          React Router v4 is a library for client-side routing in React
+          applications. Some of the benefits of using React Router v4 include:
+        </p>
+        <ul>
+          <li>
+            {" "}
+            <b>Dynamic Routing</b>: Allows to define dynamic routes that can
+            match any number of URL patterns, making it easy to handle complex
+            routing scenarios.
+          </li>
+          <li>
+            <b>Components-based approach</b>: Instead of using a configuration
+            object, React Router v4 uses a components-based approach, which
+            makes it easier to understand and reason about the routing of an
+            application.
+          </li>
+          <li>
+            {" "}
+            <b>Server-side rendering support</b>: React Router v4 is designed to
+            work seamlessly with server-side rendering, which makes it easy to
+            build fast, high-performing applications.
+          </li>
+          <li>
+            {" "}
+            <b>Nested Routes</b>: Allows to nest routes, making it easy to
+            create complex navigation structures with minimal boilerplate code.
+          </li>
+          <li>
+            {" "}
+            <b>Code splitting</b>: Allows to split the code of an application
+            into smaller chunks, which can be loaded on demand, reducing the
+            initial load time and improving performance.
+          </li>
+          <li>
+            {" "}
+            <b>Flexible and easy to use</b>: React Router v4 is flexible and
+            easy to use, it allows developers to define and manage routes in a
+            declarative and composable way.
+          </li>
+          <li>
+            {" "}
+            <b>Good documentation</b>: Has a good documentation, examples and
+            community support, which helps developers to quickly learn and
+            implement it in their projects.
+          </li>
+          <li>
+            {" "}
+            <b>It can work with any other libraries</b>: React Router v4 doesn't
+            force you to use any specific libraries, it can work with any other
+            libraries that you choose to use in your project.
+          </li>
+        </ul>
+        <p>
+          React Router v4 provides a powerful and flexible way to handle
+          client-side routing in React applications, which makes it easier to
+          build fast, high-performing, and well-organized applications.
+        </p>
       </div>
     </div>
   );
