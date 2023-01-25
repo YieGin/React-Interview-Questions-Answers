@@ -96,6 +96,12 @@ import Image95 from "./Images/95.png";
 import Image96 from "./Images/96.png";
 import Image97 from "./Images/97.png";
 import Image98 from "./Images/98.png";
+import Image99 from "./Images/99.png";
+import Image100 from "./Images/100.png";
+import Image101 from "./Images/101.png";
+import Image102 from "./Images/102.png";
+import Image104 from "./Images/104.png";
+import Image105 from "./Images/105.png";
 
 const App = () => {
   const [open, setOpen] = useState({});
@@ -1262,6 +1268,38 @@ const App = () => {
           HTML, you can send it to the client as the response to the HTTP
           request.
         </p>
+      </div>
+      <div className="Box">
+        <h1>what is event loop?</h1>
+        <p>
+          JavaScript read from top to bottom, event Loop = Queue for example..
+        </p>
+        <img src={Image104} alt="" />
+        <p>
+          So SetTimeout will put you in Queue even if it's 0 sec in this example
+          we will get <b>1 4 3 2</b>
+        </p>
+      </div>
+      <div className="Box">
+        <h1>Where do you use Rest operator ?</h1>
+        <p>
+          The rest operator (also known as the <b>"spread" operator</b> ) is
+          used in JavaScript to spread the elements of an array or object into
+          individual elements. It is represented by three dots (...).
+        </p>
+        <p>It can be used in a number of ways, including:</p>
+        <ul>
+          <li>In function calls, to pass an unknown number of arguments</li>
+          <li>
+            In array literals, to create a new array with the elements of an
+            existing array
+          </li>
+          <li>
+            In destructuring assignment, to assign the remaining elements of an
+            array to a variable
+          </li>
+        </ul>
+        <img src={Image105} alt="" />
       </div>
       <div className="Box">
         <h1>How to enable production mode in React?</h1>
@@ -3253,38 +3291,217 @@ const App = () => {
       </div>
       <div className="Box">
         <h1>What are the core principles of Redux?</h1>
+        <ul>
+          <li>Store</li>
+          <li>Action</li>
+          <li>Reducer</li>
+        </ul>
         <p></p>
       </div>
       <div className="Box">
         <h1>What are the downsides of Redux compared to Flux?</h1>
-        <p></p>
+        <p>
+          <b>Boilerplate</b>: Because Redux follows a more strict pattern for
+          managing state, it can lead to more boilerplate code, particularly
+          when it comes to setting up actions and reducers.{" "}
+        </p>
+        <p>
+          <b>Steep learning curve</b>: The concepts behind Redux can be
+          difficult to understand for developers new to the library, and it may
+          take some time to fully grasp the principles behind the architecture.{" "}
+        </p>
+        <p>
+          <b>Over-engineering</b>: Because Redux is a powerful library, it can
+          be overused in smaller projects, resulting in unnecessary complexity
+          and increased bundle size.{" "}
+        </p>
+        <p>
+          Verbosity: Redux follows strict unidirectional data flow and
+          immutability rules, which can lead to verbose and complex code,
+          especially when dealing with nested data.{" "}
+        </p>
+        <p>
+          It's worth noting that these downsides are more about the complexity
+          and learning curve of the library, and less about its performance, as
+          Redux is highly performant and scales well with large applications.
+        </p>
       </div>
       <div className="Box">
         <h1>
           What is the difference between mapStateToProps() and
           mapDispatchToProps()?
         </h1>
-        <p></p>
+        <p>
+          <b>mapStateToProps()</b> and <b>mapDispatchToProps()</b> are both
+          functions that are used in the <b>connect()</b> function from the
+          react-redux library to connect a React component to the Redux store.{" "}
+        </p>
+        <p>
+          <b>mapStateToProps()</b> is used to map the current state from the
+          store to the props of the component. It takes the current state as an
+          argument and returns an object that maps the state to the props of the
+          component. For example, if you have a piece of the state that
+          represents a user, you could map it to the props using:
+        </p>
+        <img src={Image99} alt="" />
+        <p>
+          <b> mapDispatchToProps()</b> is used to map the dispatch function to
+          the props of the component. It takes the dispatch function as an
+          argument and returns an object that maps the dispatch function to the
+          props of the component. This allows the component to dispatch actions
+          to the store and update the state. For example, you could map the
+          dispatch function to a prop called <b>dispatchAction</b> like this:
+        </p>
+        <img src={Image100} alt="" />
+        <p>
+          In short, <b>mapStateToProps</b> is used to connect the state of the
+          store to the props of the component, and <b>mapDispatchToProps</b> is
+          used to connect the dispatch function to the props of the component.
+        </p>
       </div>
       <div className="Box">
         <h1>Can I dispatch an action in reducer?</h1>
-        <p></p>
+        <p>
+          No, dispatching an action should only be done in the component or in
+          an action creator. In a reducer, the only thing that should be done is
+          updating the state based on the action that was dispatched. The
+          reducer should be a pure function that takes in the current state and
+          an action, and returns the new state. Dispatching an action within a
+          reducer would create an infinite loop, as it would trigger another
+          update to the state, causing the reducer to be called again.
+        </p>
       </div>
       <div className="Box">
         <h1>What are the drawbacks of MVW pattern?</h1>
-        <p></p>
+        <p>
+          {" "}
+          <b>The Model-View-Whatever</b> (MVW) pattern, also known as the{" "}
+          <b>Model-View-ViewModel</b> (MVVM) pattern, is a popular architectural
+          pattern for building user interfaces. However, it does have some
+          drawbacks:
+        </p>
+        <ul>
+          <li>
+            {" "}
+            <b>Complexity</b>: The MVW pattern can add a lot of complexity to a
+            project, especially when dealing with large and complex data models.
+          </li>
+          <li>
+            <b>Testability</b>: Because the ViewModel often contains the logic
+            for handling user interactions and updating the view, it can be
+            difficult to write unit tests for this component.{" "}
+          </li>
+          <li>
+            <b>Debugging</b>: Debugging can be difficult as it requires tracing
+            the flow of data and events through multiple components.{" "}
+          </li>
+          <li>
+            <b>Learning curve</b>: The MVW pattern can be difficult to learn and
+            understand, especially for developers who are new to it.
+          </li>
+          <li>
+            <b>Over-architecture</b>: When over-architecting, it is easy to end
+            up with a lot of unnecessary boilerplate code that does not add any
+            value to the project.{" "}
+          </li>
+        </ul>
+        <p>
+          That being said, it's worth noting that most of these issues can be
+          mitigated with the right implementation, testing and debugging
+          practices.
+        </p>
       </div>
       <div className="Box">
         <h1>Are there any similarities between Redux and RxJS?</h1>
-        <p></p>
+        <p>
+          Yes, there are similarities between Redux and RxJS. Both are libraries
+          that are used to manage the state of an application and handle the
+          flow of data through the application.
+        </p>
+        <p>
+          {" "}
+          <b>Redux</b> is a library for managing the state of a JavaScript
+          application. It uses a centralized store to hold the state of the
+          application and a set of reducer functions to update the state in
+          response to actions.
+        </p>
+        <p>
+          <b>RxJS </b> is a library for working with reactive programming in
+          JavaScript. It allows you to create and manipulate streams of data,
+          and to handle the flow of data through an application using
+          observables and operators.
+        </p>
+        <p>
+          Both Redux and RxJS can be used to manage the state of an application
+          and handle the flow of data, but they approach the problem from
+          slightly different angles. Redux is focused on managing the state of
+          the application using a centralized store, while RxJS is focused on
+          handling the flow of data using observables and operators.
+        </p>
       </div>
       <div className="Box">
         <h1>How to dispatch an action on load?</h1>
-        <p></p>
+        <p>
+          In a Redux application, you can dispatch an action on load by calling
+          the <b>dispatch</b> function and passing it the action you want to
+          dispatch, in the lifecycle method of your React component such as{" "}
+          <b>componentDidMount()</b> or in your main index.js file.
+        </p>
+        <p>
+          Here is an example of how you might dispatch an action on load in a
+          React component:
+        </p>
+        <img src={Image101} alt="" />
+        <p>
+          In this example, the <b>loadData</b> action is imported from a
+          separate actions file and passed to the <b>dispatch</b> function. The{" "}
+          <b>useEffect</b> hook is used to ensure that the action is dispatched
+          when the component is first loaded.
+        </p>
+        <p>
+          Alternatively, you can use the <b>store.dispatch </b> method in your
+          main index.js file
+        </p>
+        <img src={Image102} alt="" />
+        <p>
+          In this example, the <b>loadData</b> action is imported from a
+          separate actions file and passed to the <b>store.dispatch</b> method
+          after the store is created.
+        </p>
       </div>
       <div className="Box">
         <h1>How to use connect() from React Redux?</h1>
-        <p></p>
+        <p>
+          <b>connect</b> is a higher-order component (HOC) provided by the{" "}
+          <b> react-redux</b> library that allows you to connect a React
+          component to the Redux store.
+        </p>
+        <p>
+          Here is an example of how you might use <b>connect</b> to connect a
+          component to the store:
+        </p>
+        <img src={Image103} alt="" />
+        <p>
+          In this example, the <b>connect</b> function is used to connect the{" "}
+          <b>MyComponent</b> component to the store. The <b>mapStateToProps</b>{" "}
+          function is used to specify which pieces of the store's state should
+          be passed to the component as props, and the <b>mapDispatchToProps</b>{" "}
+          function is used to specify which actions should be passed to the
+          component as props.
+        </p>
+        <p>
+          You can also use the shorthand syntax of <b>connect</b> by passing an
+          object with <b>mapStateToProps</b> and <b>mapDispatchToProps</b>{" "}
+          properties.
+        </p>
+        <img src={Image104} alt="" />
+        <p>
+          Once the component is connected to the store, it will re-render any
+          time the state or props change, and the component will have access to
+          the data and loadData props. You can use the <b>data</b> and the{" "}
+          <b>loadData</b> as props in your component and can use the loadData as
+          a callback function to dispatch the loadData action.
+        </p>
       </div>
       <div className="Box">
         <h1>How to reset state in Redux?</h1>
