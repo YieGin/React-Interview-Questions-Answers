@@ -100,6 +100,7 @@ import Image99 from "./Images/99.png";
 import Image100 from "./Images/100.png";
 import Image101 from "./Images/101.png";
 import Image102 from "./Images/102.png";
+import Image103 from "./Images/103.png";
 import Image104 from "./Images/104.png";
 import Image105 from "./Images/105.png";
 
@@ -1281,7 +1282,7 @@ const App = () => {
         </p>
       </div>
       <div className="Box">
-        <h1>Where do you use Rest operator ?</h1>
+        <h1>Where do you use Rest operator?</h1>
         <p>
           The rest operator (also known as the <b>"spread" operator</b> ) is
           used in JavaScript to spread the elements of an array or object into
