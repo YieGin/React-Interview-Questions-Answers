@@ -1350,9 +1350,11 @@ const App = () => {
           change the context of a function, also known as "binding" the function
           to a specific object.
         </p>
-        The <b>call()</b> method allows you to call a function and set the this
-        value within that function to a particular object. It also allows you to
-        pass in any number of arguments as separate parameters.
+        <p>
+          The <b>call()</b> method allows you to call a function and set the
+          this value within that function to a particular object. It also allows
+          you to pass in any number of arguments as separate parameters.
+        </p>
         <img src={Image111} alt="" />
         <p>
           The <b>apply()</b> method is similar to the <b>call()</b> method, but
