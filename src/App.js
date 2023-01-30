@@ -103,6 +103,13 @@ import Image102 from "./Images/102.png";
 import Image103 from "./Images/103.png";
 import Image104 from "./Images/104.png";
 import Image105 from "./Images/105.png";
+import Image107 from "./Images/107.png";
+import Image108 from "./Images/108.png";
+import Image109 from "./Images/109.png";
+import Image110 from "./Images/110.png";
+import Image111 from "./Images/111.png";
+import Image112 from "./Images/112.png";
+import Image113 from "./Images/113.png";
 
 const App = () => {
   const [open, setOpen] = useState({});
@@ -1280,6 +1287,85 @@ const App = () => {
           So SetTimeout will put you in Queue even if it's 0 sec in this example
           we will get <b>1 4 3 2</b>
         </p>
+      </div>
+      <div className="Box">
+        <h1>what is event bubbling and event capturing in javascript</h1>
+        <p>
+          <b>bubbling</b> means start from bottom up to top
+        </p>
+        <p>
+          <b>capturing</b> means start from top to bottom{" "}
+        </p>
+        <p>
+          {" "}
+          If you pass true, it will use event <b>capturing</b> , if you pass
+          false or leave it out, it will use event <b>bubbling</b>.
+        </p>
+      </div>
+      <div className="Box">
+        <h1>what is Promise?</h1>
+        <img src={Image107} alt="" />
+      </div>
+      <div className="Box">
+        <h1> what is higher order function in javascript</h1>
+        <p>
+          A higher-order function is a function that returns a function as its
+          result.
+        </p>
+        <p>
+          higher-order functions in JavaScript include array methods like{" "}
+          <b>map</b>, <b>filter</b>, and <b>reduce</b>, as well as functions
+          like <b>setTimeout</b> and <b>addEventListener</b>, which accept
+          callback functions as arguments.
+        </p>
+      </div>
+      <div className="Box">
+        <h1>Explain different-2 types of function in javascript</h1>
+        <p>There are several types of functions in JavaScript, including:</p>
+        <ul>
+          <li>
+            Named function: A named function is a function that has a name, and
+            can be called by that name. An example of a named function is:
+          </li>
+          <img src={Image108} alt="" />
+          <li>
+            Anonymous function: An anonymous function is a function without a
+            name. It is often used as a callback function or passed as an
+            argument to another function. An example of an anonymous function
+            is:
+          </li>
+          <img src={Image109} alt="" />
+          <li>
+            Arrow function: Arrow functions are a shorthand syntax for anonymous
+            functions. It uses the "fat arrow" notation to define the function.
+            An example of an arrow function is:
+          </li>
+          <img src={Image110} alt="" />
+        </ul>
+      </div>
+      <div className="Box">
+        <h1>why we use call, apply , bind method in javascript</h1>
+        <p>
+          In JavaScript, the call(), apply(), and bind() methods are used to
+          change the context of a function, also known as "binding" the function
+          to a specific object.
+        </p>
+        The <b>call()</b> method allows you to call a function and set the this
+        value within that function to a particular object. It also allows you to
+        pass in any number of arguments as separate parameters.
+        <img src={Image111} alt="" />
+        <p>
+          The <b>apply()</b> method is similar to the <b>call()</b> method, but
+          it allows you to pass in arguments as an array.
+        </p>
+        <img src={Image112} alt="" />
+        <p>
+          The <b>bind()</b> method creates a new function with the this value
+          set to the object passed in as an argument. Unlike <b>call()</b> and{" "}
+          <b>apply()</b> which invoke the function immediately, bind() returns a
+          new function that can be invoked later.
+        </p>
+        <img src={Image113} alt="" />
       </div>
       <div className="Box">
         <h1>Where do you use Rest operator?</h1>
