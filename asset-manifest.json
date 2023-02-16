@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Interview-Questions-Answers/static/css/main.77e0d832.css",
-    "main.js": "/React-Interview-Questions-Answers/static/js/main.7f6a2037.js",
+    "main.css": "/React-Interview-Questions-Answers/static/css/main.7786a0af.css",
+    "main.js": "/React-Interview-Questions-Answers/static/js/main.f8b9b590.js",
     "static/media/67.png": "/React-Interview-Questions-Answers/static/media/67.245ab614d12dfbefbc61.png",
     "static/media/105.png": "/React-Interview-Questions-Answers/static/media/105.c21724c0010970e9d318.png",
     "static/media/66.png": "/React-Interview-Questions-Answers/static/media/66.4aab6bb9dbed1b569e38.png",
@@ -89,11 +89,11 @@
     "static/media/102.png": "/React-Interview-Questions-Answers/static/media/102.ae225cc8623473e90fdd.png",
     "static/media/91.png": "/React-Interview-Questions-Answers/static/media/91.080a1d54f4ae7c5c5c78.png",
     "index.html": "/React-Interview-Questions-Answers/index.html",
-    "main.77e0d832.css.map": "/React-Interview-Questions-Answers/static/css/main.77e0d832.css.map",
-    "main.7f6a2037.js.map": "/React-Interview-Questions-Answers/static/js/main.7f6a2037.js.map"
+    "main.7786a0af.css.map": "/React-Interview-Questions-Answers/static/css/main.7786a0af.css.map",
+    "main.f8b9b590.js.map": "/React-Interview-Questions-Answers/static/js/main.f8b9b590.js.map"
   },
   "entrypoints": [
-    "static/css/main.77e0d832.css",
-    "static/js/main.7f6a2037.js"
+    "static/css/main.7786a0af.css",
+    "static/js/main.f8b9b590.js"
   ]
 }
